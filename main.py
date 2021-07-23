@@ -7,15 +7,19 @@ import typing
 import subprocess
 import datetime
 
+temporary_dir = None
 
 FLAGS = flags.FLAGS
+
 
 flags.DEFINE_string(
     'repository', None, 'The repository to execute this script on')
 flags.DEFINE_string(
     'branch', None, 'Select a custom branch of the repository')
 flags.DEFINE_bool('offline', False,
-                  'Specify if it should use the current repository in .repo folder of it has to clone a new repository')
+                  'Specify if it should use the current repository in the folder defined with `--dir` of it has to clone a new repository')
+flags.DEFINE_string(
+    'dir', '.repo', 'Specifies the temporary directory to use to store the repository defined with the flag --repository')
 
 
 class FileData(object):
@@ -95,13 +99,13 @@ def command_exists(command_name: str) -> bool:
     return which(command_name) is not None
 
 
-def get_commits(folder='.repo') -> typing.List[str]:
+def get_commits(folder: str) -> typing.List[str]:
     """
         Gets all the commits done on the repository's branch `FLAGS.branch` contained in `folder`
 
         At each commit it runs the `cloc` utility to retrieve all data
     """
-    os.chdir(".repo")
+    os.chdir(folder)
     command = r'git.--no-pager.log.--pretty=format:"%H %ad".--date=format:"%F"'
     p = subprocess.Popen(command.split("."),
                          stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -115,7 +119,7 @@ def get_commits(folder='.repo') -> typing.List[str]:
     return commits
 
 
-def get_data(folder='.repo') -> typing.Tuple[typing.List[FileData], AggregatedData]:
+def get_data(folder: str) -> typing.Tuple[typing.List[FileData], AggregatedData]:
     """
         Get the data of `folder` using the `cloc` utility
 
@@ -140,26 +144,30 @@ def get_data(folder='.repo') -> typing.Tuple[typing.List[FileData], AggregatedDa
 
 
 def main(args):
-    repository = FLAGS.repository
-
-    if repository is None:
-        print("Missing `--repository` flag")
-        print("Run `python3 main.py --help` to get a list of flags")
-        exit(-1)
+    temporary_dir = FLAGS.dir
 
     if not FLAGS.offline:
-        if os.path.exists('.repo') and os.path.isdir('.repo'):
-            shutil.rmtree('.repo')
+        repository = FLAGS.repository
+        if repository is None:
+            print("Missing `--repository` flag")
+            print("Run `python3 main.py --help` to get a list of flags")
+            exit(-1)
+        if os.path.exists(temporary_dir) and os.path.isdir(temporary_dir):
+            shutil.rmtree(temporary_dir)
 
-        os.mkdir('.repo')
+        os.mkdir(temporary_dir)
         try:
-            subprocess.call(['git', 'clone', repository, '.repo'])
+            subprocess.call(['git', 'clone', repository, temporary_dir])
         except:
             print("Failed to clone repository")
             exit(-2)
+    else:
+        if not os.path.exists(temporary_dir):
+            print("You can't use --offline flag on a non-existent --dir directory")
+            exit(-1)
 
     if FLAGS.branch is not None:
-        os.chdir(".repo")
+        os.chdir(temporary_dir)
         p = subprocess.Popen(['git', 'checkout', FLAGS.branch],
                              stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         error = list(p.stderr.readlines())
@@ -170,28 +178,33 @@ def main(args):
             print(f"Changed branch to {FLAGS.branch}")
         os.chdir('..')
 
-    commits = get_commits()
+    commits = get_commits(temporary_dir)
 
-    languages, aggregated = get_data()
+    languages, aggregated = get_data(temporary_dir)
     print(f"There are {len(languages)} possible languages to pick:")
     count = 0
+    langs = {}
     for lang in languages:
         print(f"- {count}: {lang.lang.lower()}")
+        langs[count] = lang.lang
         count += 1
     print(f"- {count}: the sum of all them")
 
     retry = True
     while retry:
         retry = False
-        languages_to_plot = input(
-            "Which one you want to pick?\n(you can select how many languages you want, just comma-separated '1,2,3')\n").split(",")
+        try:
+            languages_to_plot = [int(index) for index in input(
+                "Which one you want to pick?\n(you can select how many languages you want, just comma-separated '1,2,3')\n").split(",")]
+            for item in languages_to_plot:
+                if int(item) > count:
+                    print(f"item {item} is not valid")
+                    retry = True
+        except:
+            print(f"The selection must be done with the indexes between 0 and {count}")
+            retry = True
 
-        for item in languages_to_plot:
-            if int(item) > count:
-                print(f"item {item} is not valid")
-                retry = True
-
-    print(f"Should plot {languages_to_plot}")
+    print(f"Should plot {[langs[index] for index in  languages_to_plot]}")
 
 
 if __name__ == '__main__':
