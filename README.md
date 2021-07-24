@@ -1,4 +1,4 @@
-# REPO PLOTTER
+# Repo Plotter
 
 Useless script that plots repository stats over time.
 
@@ -25,8 +25,8 @@ to install the needed dependencies.
 
 After that you can run the script
 
-```console
-$ python3 main.py --repository <repository_url>
+```zsh
+$ python3 -m plotter --repository "repository_url"
 ```
 
 ## Flags
@@ -43,3 +43,6 @@ $ python3 main.py --repository <repository_url>
 - `--dir <directory_path>`
   - optional, if not defined it will use `.repo` directory
   - Specifies the temporary directory to use to store the repository defined with the flag `--repository`
+- `--input_file <file_path>`
+  - optional, if defined it will override `--repository` and `--offline` flags
+  - Specifies a custom json file to feed the script. It must has been generated during an old execution

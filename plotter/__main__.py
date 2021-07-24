@@ -1,94 +1,29 @@
 import json
 import os
-from absl import app
-from absl import flags
 import shutil
-import typing
 import subprocess
-import datetime
+import typing
 
-temporary_dir = None
+import progressbar
+from absl import app, flags
+
+from plotter.model.src.repo_history import RepoHistory, parse_repo_history
+
+from .model.src.commit import Commit
+from .utilities import get_cloc_data
 
 FLAGS = flags.FLAGS
 
-
 flags.DEFINE_string(
     'repository', None, 'The repository to execute this script on')
+flags.DEFINE_string(
+    'input_file', None, "Specifies a custom json file to feed the script. It must has been generated during an old execution")
 flags.DEFINE_string(
     'branch', None, 'Select a custom branch of the repository')
 flags.DEFINE_bool('offline', False,
                   'Specify if it should use the current repository in the folder defined with `--dir` of it has to clone a new repository')
 flags.DEFINE_string(
     'dir', '.repo', 'Specifies the temporary directory to use to store the repository defined with the flag --repository')
-
-
-class FileData(object):
-    """
-        Class that contains the data for the single language calculated by `cloc`
-    """
-
-    def __init__(self, lang: str, data: map):
-        self.lang = lang
-        self.numFiles = data['nFiles']
-        self.blank = data['blank']
-        self.comment = data['comment']
-        self.code = data['code']
-
-    def to_string(self):
-        return f"Language {self.lang} has {self.code} lines of code"
-
-
-class AggregatedData(object):
-    """
-        Class that contains the aggregated data calculated by `cloc`
-    """
-
-    def __init__(self, data: map):
-        self.blank = data['blank']
-        self.comment = data['comment']
-        self.code = data['code']
-        self.nFiles = data['nFiles']
-
-    def to_string(self):
-        return f"Total lines of code: {self.code}"
-
-
-class Commit(object):
-    """
-        Class that contains the info regarding a single commit
-
-        It contains the `hash` of the commit, its date and the `cloc` data
-    """
-
-    def __init__(self, data: str):
-        commit, date = data.replace('"', '').split(" ")
-        self.commitHash = commit
-        year, month, day = date.split("-")
-        self.date = datetime.datetime(
-            year=int(year), month=int(month), day=int(day))
-
-    def compare_to(self, other):
-        """
-            Compares `self` and `other` (if it's a `Commit`)
-
-            returns:
-                - -1 if `other` was done before
-                - 0 if `self` and `other` have the same date
-                - 1 if `self` was done before
-        """
-        if not isinstance(other, Commit):
-            raise Exception(
-                "Cannot compare to an object that isn't a `Commit`")
-
-        if self.date == other.date:
-            return 0
-        elif self.date < other.date:
-            return 1
-        else:
-            return -1
-
-    def to_string(self):
-        return f"Commit {self.commitHash} done on {self.date}"
 
 
 def command_exists(command_name: str) -> bool:
@@ -113,39 +48,18 @@ def get_commits(folder: str) -> typing.List[str]:
 
     lines = p.stdout.readlines()
     commits = []
-    for line in lines:
-        commit = line.decode('utf-8').strip()
-        commits.append(Commit(commit))
+    for index in progressbar.progressbar(range(len(lines))):
+        line = lines[index]
+        commit = Commit(line.decode('utf-8').strip())
+        commit.checkout_and_get_data(folder)
+        commits.append(commit)
     return commits
 
 
-def get_data(folder: str) -> typing.Tuple[typing.List[FileData], AggregatedData]:
+def generate_repo_history(temporary_dir: str) -> RepoHistory:
     """
-        Get the data of `folder` using the `cloc` utility
-
-        Returns the list of languages contained in the repository
+        Generates a `RepoHistory` object if `FLAGS.input_file` is not specified
     """
-    p = subprocess.Popen(['cloc', folder, '--json'],
-                         stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    output_lines = p.stdout.readlines()
-    output = ""
-    for line in output_lines:
-        output += line.decode('utf-8')
-    output = json.loads(output)
-    languages = [lang for lang in output if lang != 'header']
-    data = []
-    aggregated = None
-    for lang in languages:
-        if lang == 'SUM':
-            aggregated = AggregatedData(output[lang])
-        else:
-            data.append(FileData(lang, output[lang]))
-    return (data, aggregated)
-
-
-def main(args):
-    temporary_dir = FLAGS.dir
-
     if not FLAGS.offline:
         repository = FLAGS.repository
         if repository is None:
@@ -179,8 +93,21 @@ def main(args):
         os.chdir('..')
 
     commits = get_commits(temporary_dir)
+    return RepoHistory(commits)
 
-    languages, aggregated = get_data(temporary_dir)
+
+def main(args):
+    temporary_dir = FLAGS.dir
+
+    if FLAGS.input_file is not None:
+        repo_history = parse_repo_history(FLAGS.input_file)
+    else:
+        repo_history = generate_repo_history(temporary_dir)
+        with open('output.json', 'w+') as f:
+            json.dump(repo_history.as_map(), f)
+
+    languages, _ = get_cloc_data(temporary_dir)
+
     print(f"There are {len(languages)} possible languages to pick:")
     count = 0
     langs = {}
@@ -188,6 +115,7 @@ def main(args):
         print(f"- {count}: {lang.lang.lower()}")
         langs[count] = lang.lang
         count += 1
+    langs[count] = 'All'
     print(f"- {count}: the sum of all them")
 
     retry = True
@@ -201,7 +129,8 @@ def main(args):
                     print(f"item {item} is not valid")
                     retry = True
         except:
-            print(f"The selection must be done with the indexes between 0 and {count}")
+            print(
+                f"The selection must be done with the indexes between 0 and {count}")
             retry = True
 
     print(f"Should plot {[langs[index] for index in  languages_to_plot]}")
