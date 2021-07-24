@@ -23,6 +23,34 @@ class FileData(object):
     def to_string(self):
         return f"Language {self.lang} has {self.code} lines of code"
 
+    def add_other_data(self, other_data, inPlace=True):
+        """
+            Adds another `FileData` object to `self`
+
+            `self.lang` and `other_data.lang` must have the same value
+
+            if `inPlace` is `True`, this call will modify the internal state of `FileData`,
+            otherwise it will generate a new `FileData` object
+        """
+        if not isinstance(other_data, FileData):
+            raise Exception("You can sum only two FileData objects")
+        if other_data.lang != self.lang:
+            raise Exception(
+                "It doesn't make sense to sum two FileData that are on different languages")
+        if inPlace:
+            self.numFiles += other_data.numFiles
+            self.blank += other_data.blank
+            self.comment += other_data.comment
+            self.code += other_data.code
+        else:
+            return FileData({
+                'lang': self.lang,
+                'nFiles': self.numFiles + other_data.numFiles,
+                'blank': self.blank + other_data.blank,
+                'comment': self.comment + other_data.comment,
+                'code': self.code + other_data.code,
+            })
+
     def as_map(self) -> map:
         return {
             'lang': self.lang,

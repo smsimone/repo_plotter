@@ -1,11 +1,11 @@
 
 import datetime
 import os
-from plotter.model.src.aggregated import AggregatedData
-import typing
-from plotter.model.src.filedata import FileData
 import subprocess
+import typing
 
+from plotter.model.src.aggregated import AggregatedData
+from plotter.model.src.filedata import FileData
 from plotter.utilities import get_cloc_data
 
 
@@ -35,6 +35,36 @@ class Commit(object):
 
     def __set_aggregated_data__(self, data: AggregatedData):
         self.aggregated = data
+
+    def __get_data_for_lang__(self, lang: str) -> FileData:
+        """
+            Gets the `FileData` object for the language `lang`
+
+            If it doesn't exists, returns `None`
+        """
+        for data in self.langData:
+            if data.lang == lang:
+                return data
+        else:
+            return None
+
+    def add_commit_data(self, other_commit):
+        if not isinstance(other_commit, Commit):
+            raise Exception("You can sum only two commits")
+        self_languages = [data.lang for data in self.langData]
+        other_languages = [data.lang for data in other_commit.langData]
+
+        common_languages = set(self_languages).intersection(other_languages)
+        missing_languages = set(other_languages).difference(self_languages)
+        new_lang_data = []
+        for data in self.langData:
+            if data.lang in common_languages:
+                new_lang_data.append(data.add_other_data(
+                    other_commit.__get_data_for_lang__(data.lang), inPlace=False))
+        for data in other_commit.langData:
+            if data.lang in missing_languages:
+                new_lang_data.append(data)
+        self.langData = new_lang_data
 
     def compare_to(self, other):
         """
@@ -85,7 +115,7 @@ class Commit(object):
 
 def parse_commit(data: map) -> Commit:
     commit = Commit(f"{data['hash']} {data['date']}")
-    commit.__set_aggregated_data__(data['aggregated'])
+    commit.__set_aggregated_data__(AggregatedData(data['aggregated']))
     fileData = [FileData(item) for item in data['fileData']]
     commit.__set_file_data__(fileData)
     return commit

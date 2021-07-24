@@ -22,6 +22,10 @@ flags.DEFINE_string(
     'branch', None, 'Select a custom branch of the repository')
 flags.DEFINE_bool('offline', False,
                   'Specify if it should use the current repository in the folder defined with `--dir` of it has to clone a new repository')
+flags.DEFINE_bool('write_output', False,
+                  'Specifies wether the script has to write the intermediate results to output')
+flags.DEFINE_string('output_folder', None,
+                    'Specifies the folder where the script has to write the output files')
 flags.DEFINE_string(
     'dir', '.repo', 'Specifies the temporary directory to use to store the repository defined with the flag --repository')
 
@@ -98,13 +102,31 @@ def generate_repo_history(temporary_dir: str) -> RepoHistory:
 
 def main(args):
     temporary_dir = FLAGS.dir
+    write_output = FLAGS.write_output
+    output_folder = None
+
+    if write_output:
+        if FLAGS.output_folder is None:
+            print(
+                'If you specify --write_output you must specify the ouput folder with --output_folder flag')
+            exit(-1)
+        output_folder = FLAGS.output_folder
+        if not os.path.exists(output_folder):
+            os.mkdir(output_folder)
 
     if FLAGS.input_file is not None:
         repo_history = parse_repo_history(FLAGS.input_file)
     else:
         repo_history = generate_repo_history(temporary_dir)
-        with open('output.json', 'w+') as f:
+        if write_output:
+            with open(f'{output_folder}/repo_history.json', 'w+') as f:
+                json.dump(repo_history.as_map(), f)
+
+    repo_history.preprocess_commits()
+    if write_output:
+        with open(f'{output_folder}/repo_history_preprocessed.json', 'w+') as f:
             json.dump(repo_history.as_map(), f)
+    exit(-1)
 
     languages, _ = get_cloc_data(temporary_dir)
 

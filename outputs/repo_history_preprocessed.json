@@ -1,0 +1,5216 @@
+{
+    "initialDate": "2021-5-18",
+    "finalDate": "2021-7-23",
+    "commits": [
+        {
+            "hash": "82a08dc5d3ed6a1a7b280af30f85631228699484",
+            "date": "2021-5-18",
+            "aggregated": {
+                "blank": 381,
+                "comment": 109,
+                "code": 3369,
+                "nFiles": 74
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 53,
+                    "blank": 571,
+                    "comment": 144,
+                    "code": 4108
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 81,
+                    "blank": 32,
+                    "comment": 230,
+                    "code": 1670
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 33,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1145
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 9,
+                    "blank": 229,
+                    "comment": 84,
+                    "code": 972
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 17,
+                    "blank": 79,
+                    "comment": 0,
+                    "code": 518
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 9,
+                    "blank": 65,
+                    "comment": 67,
+                    "code": 439
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 15,
+                    "blank": 85,
+                    "comment": 15,
+                    "code": 405
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 5,
+                    "blank": 10,
+                    "comment": 0,
+                    "code": 20
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 5,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 5
+                }
+            ]
+        },
+        {
+            "hash": "02519c0c5fc1a3be3a6c2245bbf6a284665bd54f",
+            "date": "2021-5-19",
+            "aggregated": {
+                "blank": 400,
+                "comment": 109,
+                "code": 3386,
+                "nFiles": 74
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 69,
+                    "blank": 801,
+                    "comment": 102,
+                    "code": 5877
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 51,
+                    "blank": 75,
+                    "comment": 138,
+                    "code": 1128
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 30,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1023
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 6,
+                    "blank": 171,
+                    "comment": 63,
+                    "code": 720
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 33,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 396
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 12,
+                    "blank": 57,
+                    "comment": 0,
+                    "code": 393
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 6,
+                    "blank": 39,
+                    "comment": 15,
+                    "code": 363
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 9,
+                    "blank": 51,
+                    "comment": 9,
+                    "code": 243
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 3,
+                    "blank": 6,
+                    "comment": 0,
+                    "code": 12
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 3,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 3
+                }
+            ]
+        },
+        {
+            "hash": "c0e9db037548a1435ff82396b88c4c808a5e0221",
+            "date": "2021-5-21",
+            "aggregated": {
+                "blank": 1142,
+                "comment": 99,
+                "code": 10594,
+                "nFiles": 117
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 350,
+                    "blank": 4575,
+                    "comment": 315,
+                    "code": 45823
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 60,
+                    "blank": 290,
+                    "comment": 10,
+                    "code": 1915
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 10,
+                    "blank": 285,
+                    "comment": 105,
+                    "code": 1200
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 45,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 865
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 25,
+                    "blank": 100,
+                    "comment": 0,
+                    "code": 730
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 15,
+                    "blank": 65,
+                    "comment": 25,
+                    "code": 719
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 65,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 720
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 5,
+                    "blank": 300,
+                    "comment": 0,
+                    "code": 700
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 5,
+                    "blank": 95,
+                    "comment": 40,
+                    "code": 295
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 5,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 5
+                }
+            ]
+        },
+        {
+            "hash": "23122604f640eaf4ff22c04dbe508cb19a97bdd0",
+            "date": "2021-5-24",
+            "aggregated": {
+                "blank": 1152,
+                "comment": 119,
+                "code": 10911,
+                "nFiles": 118
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 212,
+                    "blank": 2765,
+                    "comment": 229,
+                    "code": 28127
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 36,
+                    "blank": 174,
+                    "comment": 6,
+                    "code": 1149
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 6,
+                    "blank": 171,
+                    "comment": 63,
+                    "code": 720
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 27,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 519
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 15,
+                    "blank": 60,
+                    "comment": 0,
+                    "code": 438
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 39,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 432
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 9,
+                    "blank": 39,
+                    "comment": 15,
+                    "code": 429
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 3,
+                    "blank": 180,
+                    "comment": 0,
+                    "code": 420
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 3,
+                    "blank": 57,
+                    "comment": 24,
+                    "code": 177
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 3,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 3
+                }
+            ]
+        },
+        {
+            "hash": "b4693ddfa9446b7d4332e02f8e3d2e5f7ffe9f07",
+            "date": "2021-5-26",
+            "aggregated": {
+                "blank": 1140,
+                "comment": 102,
+                "code": 10611,
+                "nFiles": 118
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 142,
+                    "blank": 1826,
+                    "comment": 126,
+                    "code": 18362
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 24,
+                    "blank": 116,
+                    "comment": 4,
+                    "code": 766
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 4,
+                    "blank": 114,
+                    "comment": 42,
+                    "code": 480
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 18,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 346
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 10,
+                    "blank": 40,
+                    "comment": 0,
+                    "code": 292
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 26,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 288
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 6,
+                    "blank": 26,
+                    "comment": 16,
+                    "code": 288
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 2,
+                    "blank": 120,
+                    "comment": 0,
+                    "code": 280
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 2,
+                    "blank": 38,
+                    "comment": 16,
+                    "code": 118
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 2,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 2
+                }
+            ]
+        },
+        {
+            "hash": "01982c1ad7f4475b5c66d67217f745f9943c768b",
+            "date": "2021-5-27",
+            "aggregated": {
+                "blank": 1199,
+                "comment": 161,
+                "code": 11056,
+                "nFiles": 120
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 649,
+                    "blank": 8500,
+                    "comment": 878,
+                    "code": 84924
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 108,
+                    "blank": 522,
+                    "comment": 18,
+                    "code": 3447
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 18,
+                    "blank": 513,
+                    "comment": 189,
+                    "code": 2160
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 81,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1557
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 45,
+                    "blank": 180,
+                    "comment": 0,
+                    "code": 1314
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 27,
+                    "blank": 117,
+                    "comment": 57,
+                    "code": 1307
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 117,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1296
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 9,
+                    "blank": 540,
+                    "comment": 0,
+                    "code": 1260
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 9,
+                    "blank": 171,
+                    "comment": 72,
+                    "code": 531
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 9,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 9
+                }
+            ]
+        },
+        {
+            "hash": "7d0e6c9385604fc4b363994e65460ccfceb17d32",
+            "date": "2021-5-28",
+            "aggregated": {
+                "blank": 1229,
+                "comment": 201,
+                "code": 11255,
+                "nFiles": 133
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 218,
+                    "blank": 2793,
+                    "comment": 268,
+                    "code": 28292
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 54,
+                    "blank": 186,
+                    "comment": 138,
+                    "code": 1329
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 6,
+                    "blank": 171,
+                    "comment": 63,
+                    "code": 720
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 27,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 519
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 15,
+                    "blank": 60,
+                    "comment": 0,
+                    "code": 438
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 39,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 432
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 9,
+                    "blank": 39,
+                    "comment": 15,
+                    "code": 429
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 3,
+                    "blank": 180,
+                    "comment": 0,
+                    "code": 420
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 3,
+                    "blank": 57,
+                    "comment": 60,
+                    "code": 363
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 9,
+                    "blank": 51,
+                    "comment": 9,
+                    "code": 237
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 3,
+                    "blank": 72,
+                    "comment": 6,
+                    "code": 192
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 3,
+                    "blank": 57,
+                    "comment": 24,
+                    "code": 177
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 3,
+                    "blank": 9,
+                    "comment": 15,
+                    "code": 114
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 3,
+                    "blank": 6,
+                    "comment": 0,
+                    "code": 12
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 3,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 3
+                }
+            ]
+        },
+        {
+            "hash": "3fcb17b7951f2857fd104c6cfcff21ae41fd595a",
+            "date": "2021-5-31",
+            "aggregated": {
+                "blank": 1220,
+                "comment": 208,
+                "code": 11094,
+                "nFiles": 120
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 345,
+                    "blank": 4704,
+                    "comment": 649,
+                    "code": 45020
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 72,
+                    "blank": 298,
+                    "comment": 98,
+                    "code": 2035
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 10,
+                    "blank": 285,
+                    "comment": 105,
+                    "code": 1200
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 45,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 865
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 15,
+                    "blank": 65,
+                    "comment": 28,
+                    "code": 733
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 25,
+                    "blank": 100,
+                    "comment": 0,
+                    "code": 730
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 65,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 720
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 5,
+                    "blank": 300,
+                    "comment": 0,
+                    "code": 700
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 5,
+                    "blank": 95,
+                    "comment": 40,
+                    "code": 295
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 5,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 5
+                }
+            ]
+        },
+        {
+            "hash": "16887dbc0ac8ebe7fc2635615e4b51c2d6650bae",
+            "date": "2021-6-1",
+            "aggregated": {
+                "blank": 1247,
+                "comment": 201,
+                "code": 11463,
+                "nFiles": 124
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 300,
+                    "blank": 4028,
+                    "comment": 653,
+                    "code": 39467
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 48,
+                    "blank": 232,
+                    "comment": 8,
+                    "code": 1532
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 8,
+                    "blank": 228,
+                    "comment": 84,
+                    "code": 960
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 36,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 692
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 12,
+                    "blank": 52,
+                    "comment": 28,
+                    "code": 592
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 20,
+                    "blank": 80,
+                    "comment": 0,
+                    "code": 584
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 52,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 576
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 4,
+                    "blank": 240,
+                    "comment": 0,
+                    "code": 560
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 4,
+                    "blank": 76,
+                    "comment": 32,
+                    "code": 236
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 4,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 4
+                }
+            ]
+        },
+        {
+            "hash": "cf311b73d59d3dffc5c20ff372daf06315c49b3c",
+            "date": "2021-6-3",
+            "aggregated": {
+                "blank": 1298,
+                "comment": 251,
+                "code": 12693,
+                "nFiles": 132
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 575,
+                    "blank": 7352,
+                    "comment": 1619,
+                    "code": 75062
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 84,
+                    "blank": 406,
+                    "comment": 14,
+                    "code": 2681
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 14,
+                    "blank": 399,
+                    "comment": 147,
+                    "code": 1680
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 63,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1211
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 21,
+                    "blank": 91,
+                    "comment": 56,
+                    "code": 1036
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 35,
+                    "blank": 140,
+                    "comment": 0,
+                    "code": 1022
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 91,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1008
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 7,
+                    "blank": 420,
+                    "comment": 0,
+                    "code": 980
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 7,
+                    "blank": 133,
+                    "comment": 56,
+                    "code": 413
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 7,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 7
+                }
+            ]
+        },
+        {
+            "hash": "837fb2d8c3e41a4990f20c24532ccf2261a0f92c",
+            "date": "2021-6-4",
+            "aggregated": {
+                "blank": 1331,
+                "comment": 610,
+                "code": 12295,
+                "nFiles": 136
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 422,
+                    "blank": 5293,
+                    "comment": 1802,
+                    "code": 53721
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 72,
+                    "blank": 298,
+                    "comment": 98,
+                    "code": 2035
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 10,
+                    "blank": 285,
+                    "comment": 105,
+                    "code": 1200
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 45,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 865
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 15,
+                    "blank": 65,
+                    "comment": 34,
+                    "code": 740
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 25,
+                    "blank": 100,
+                    "comment": 0,
+                    "code": 730
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 65,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 720
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 5,
+                    "blank": 300,
+                    "comment": 0,
+                    "code": 700
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 5,
+                    "blank": 95,
+                    "comment": 40,
+                    "code": 295
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 5,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 5
+                }
+            ]
+        },
+        {
+            "hash": "9a2894b4f97d930134464aaf46a3ab4c1687e4d4",
+            "date": "2021-6-7",
+            "aggregated": {
+                "blank": 1329,
+                "comment": 284,
+                "code": 12924,
+                "nFiles": 144
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 259,
+                    "blank": 3247,
+                    "comment": 985,
+                    "code": 33378
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 48,
+                    "blank": 190,
+                    "comment": 72,
+                    "code": 1281
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 6,
+                    "blank": 171,
+                    "comment": 63,
+                    "code": 720
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 29,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 597
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 9,
+                    "blank": 39,
+                    "comment": 20,
+                    "code": 448
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 15,
+                    "blank": 60,
+                    "comment": 0,
+                    "code": 438
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 39,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 432
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 3,
+                    "blank": 180,
+                    "comment": 0,
+                    "code": 420
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 3,
+                    "blank": 57,
+                    "comment": 24,
+                    "code": 177
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 3,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 3
+                }
+            ]
+        },
+        {
+            "hash": "8c41bb014f708a42d5dc3ca91a9b4a5b2e315124",
+            "date": "2021-6-8",
+            "aggregated": {
+                "blank": 1443,
+                "comment": 363,
+                "code": 14641,
+                "nFiles": 162
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 725,
+                    "blank": 8872,
+                    "comment": 2297,
+                    "code": 95158
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 138,
+                    "blank": 513,
+                    "comment": 258,
+                    "code": 3520
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 16,
+                    "blank": 456,
+                    "comment": 168,
+                    "code": 1920
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 78,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1618
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 113,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1311
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 24,
+                    "blank": 106,
+                    "comment": 46,
+                    "code": 1224
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 40,
+                    "blank": 160,
+                    "comment": 0,
+                    "code": 1168
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 8,
+                    "blank": 480,
+                    "comment": 0,
+                    "code": 1120
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 8,
+                    "blank": 152,
+                    "comment": 64,
+                    "code": 472
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 8,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 8
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 1,
+                    "blank": 19,
+                    "comment": 20,
+                    "code": 121
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 1,
+                    "blank": 24,
+                    "comment": 2,
+                    "code": 64
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 1,
+                    "blank": 3,
+                    "comment": 5,
+                    "code": 40
+                }
+            ]
+        },
+        {
+            "hash": "36babdfed1d804ce443878f3ab2167b60196a9c7",
+            "date": "2021-6-9",
+            "aggregated": {
+                "blank": 1493,
+                "comment": 373,
+                "code": 15259,
+                "nFiles": 166
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 200,
+                    "blank": 2378,
+                    "comment": 550,
+                    "code": 26612
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 36,
+                    "blank": 130,
+                    "comment": 70,
+                    "code": 898
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 4,
+                    "blank": 114,
+                    "comment": 42,
+                    "code": 480
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 20,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 424
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 32,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 394
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 6,
+                    "blank": 26,
+                    "comment": 10,
+                    "code": 312
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 10,
+                    "blank": 40,
+                    "comment": 0,
+                    "code": 292
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 2,
+                    "blank": 120,
+                    "comment": 0,
+                    "code": 280
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 2,
+                    "blank": 38,
+                    "comment": 40,
+                    "code": 242
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 8,
+                    "blank": 40,
+                    "comment": 4,
+                    "code": 240
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 2,
+                    "blank": 48,
+                    "comment": 4,
+                    "code": 128
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 2,
+                    "blank": 38,
+                    "comment": 16,
+                    "code": 118
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 2,
+                    "blank": 6,
+                    "comment": 10,
+                    "code": 80
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 4,
+                    "blank": 8,
+                    "comment": 0,
+                    "code": 16
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 2,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 2
+                }
+            ]
+        },
+        {
+            "hash": "98f4b0aebe0c8c1c9acd5ad9622dba09287568a8",
+            "date": "2021-6-10",
+            "aggregated": {
+                "blank": 1342,
+                "comment": 621,
+                "code": 12399,
+                "nFiles": 137
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 264,
+                    "blank": 3195,
+                    "comment": 1762,
+                    "code": 31574
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 42,
+                    "blank": 181,
+                    "comment": 39,
+                    "code": 1215
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 6,
+                    "blank": 171,
+                    "comment": 63,
+                    "code": 720
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 28,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 558
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 9,
+                    "blank": 39,
+                    "comment": 15,
+                    "code": 456
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 15,
+                    "blank": 60,
+                    "comment": 0,
+                    "code": 438
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 42,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 485
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 3,
+                    "blank": 180,
+                    "comment": 0,
+                    "code": 420
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 3,
+                    "blank": 57,
+                    "comment": 24,
+                    "code": 177
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 3,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 3
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 1,
+                    "blank": 19,
+                    "comment": 20,
+                    "code": 121
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 4,
+                    "blank": 20,
+                    "comment": 2,
+                    "code": 120
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 1,
+                    "blank": 24,
+                    "comment": 2,
+                    "code": 64
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 1,
+                    "blank": 3,
+                    "comment": 5,
+                    "code": 40
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 2,
+                    "blank": 4,
+                    "comment": 0,
+                    "code": 8
+                }
+            ]
+        },
+        {
+            "hash": "c3f8dd4d0437a79ab40ca70c391bc3ec39a1e4be",
+            "date": "2021-6-11",
+            "aggregated": {
+                "blank": 1150,
+                "comment": 565,
+                "code": 9956,
+                "nFiles": 134
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 585,
+                    "blank": 6998,
+                    "comment": 4244,
+                    "code": 70385
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 126,
+                    "blank": 446,
+                    "comment": 278,
+                    "code": 3125
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 14,
+                    "blank": 399,
+                    "comment": 147,
+                    "code": 1680
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 103,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1220
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 64,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1250
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 21,
+                    "blank": 91,
+                    "comment": 37,
+                    "code": 1072
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 35,
+                    "blank": 140,
+                    "comment": 0,
+                    "code": 1022
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 7,
+                    "blank": 420,
+                    "comment": 0,
+                    "code": 980
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 7,
+                    "blank": 133,
+                    "comment": 140,
+                    "code": 847
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 27,
+                    "blank": 131,
+                    "comment": 17,
+                    "code": 719
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 7,
+                    "blank": 168,
+                    "comment": 14,
+                    "code": 448
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 7,
+                    "blank": 133,
+                    "comment": 56,
+                    "code": 413
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 7,
+                    "blank": 21,
+                    "comment": 35,
+                    "code": 275
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 8,
+                    "blank": 16,
+                    "comment": 0,
+                    "code": 32
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 7,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 7
+                }
+            ]
+        },
+        {
+            "hash": "89224ad095fd870b87fdd7074a3183e0e9a8b2bf",
+            "date": "2021-6-14",
+            "aggregated": {
+                "blank": 1434,
+                "comment": 745,
+                "code": 13412,
+                "nFiles": 159
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 461,
+                    "blank": 5518,
+                    "comment": 3214,
+                    "code": 56615
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 90,
+                    "blank": 322,
+                    "comment": 186,
+                    "code": 2239
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 10,
+                    "blank": 285,
+                    "comment": 105,
+                    "code": 1200
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 49,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1021
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 77,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 932
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 15,
+                    "blank": 65,
+                    "comment": 29,
+                    "code": 762
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 25,
+                    "blank": 100,
+                    "comment": 0,
+                    "code": 730
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 5,
+                    "blank": 300,
+                    "comment": 0,
+                    "code": 700
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 5,
+                    "blank": 95,
+                    "comment": 100,
+                    "code": 605
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 20,
+                    "blank": 97,
+                    "comment": 11,
+                    "code": 560
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 5,
+                    "blank": 120,
+                    "comment": 10,
+                    "code": 320
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 5,
+                    "blank": 95,
+                    "comment": 40,
+                    "code": 295
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 5,
+                    "blank": 15,
+                    "comment": 25,
+                    "code": 193
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 9,
+                    "blank": 18,
+                    "comment": 0,
+                    "code": 36
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 5,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 5
+                }
+            ]
+        },
+        {
+            "hash": "2b83884629c23025f3ea24e87091d5cdd11cca22",
+            "date": "2021-6-15",
+            "aggregated": {
+                "blank": 1361,
+                "comment": 675,
+                "code": 12450,
+                "nFiles": 157
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 733,
+                    "blank": 8456,
+                    "comment": 4692,
+                    "code": 84598
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 144,
+                    "blank": 520,
+                    "comment": 280,
+                    "code": 3592
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 16,
+                    "blank": 456,
+                    "comment": 168,
+                    "code": 1920
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 80,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1696
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 128,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1576
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 24,
+                    "blank": 104,
+                    "comment": 41,
+                    "code": 1219
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 40,
+                    "blank": 160,
+                    "comment": 0,
+                    "code": 1168
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 8,
+                    "blank": 480,
+                    "comment": 0,
+                    "code": 1120
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 8,
+                    "blank": 152,
+                    "comment": 160,
+                    "code": 968
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 32,
+                    "blank": 160,
+                    "comment": 16,
+                    "code": 960
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 8,
+                    "blank": 192,
+                    "comment": 16,
+                    "code": 512
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 8,
+                    "blank": 152,
+                    "comment": 64,
+                    "code": 472
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 8,
+                    "blank": 24,
+                    "comment": 40,
+                    "code": 312
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 16,
+                    "blank": 32,
+                    "comment": 0,
+                    "code": 64
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 8,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 8
+                }
+            ]
+        },
+        {
+            "hash": "d7dcc73c85a9547efde7ead7fee3fa7334fa50f7",
+            "date": "2021-6-16",
+            "aggregated": {
+                "blank": 1371,
+                "comment": 686,
+                "code": 12527,
+                "nFiles": 157
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 728,
+                    "blank": 8598,
+                    "comment": 4892,
+                    "code": 84791
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 144,
+                    "blank": 520,
+                    "comment": 280,
+                    "code": 3592
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 16,
+                    "blank": 456,
+                    "comment": 168,
+                    "code": 1920
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 80,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1696
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 128,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1576
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 24,
+                    "blank": 104,
+                    "comment": 40,
+                    "code": 1216
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 40,
+                    "blank": 160,
+                    "comment": 0,
+                    "code": 1168
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 8,
+                    "blank": 480,
+                    "comment": 0,
+                    "code": 1120
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 8,
+                    "blank": 152,
+                    "comment": 160,
+                    "code": 968
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 32,
+                    "blank": 160,
+                    "comment": 16,
+                    "code": 960
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 8,
+                    "blank": 192,
+                    "comment": 16,
+                    "code": 512
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 8,
+                    "blank": 152,
+                    "comment": 64,
+                    "code": 472
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 8,
+                    "blank": 24,
+                    "comment": 40,
+                    "code": 312
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 16,
+                    "blank": 32,
+                    "comment": 0,
+                    "code": 64
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 8,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 8
+                }
+            ]
+        },
+        {
+            "hash": "7914f4a51457595c81222de9c2d4b2d2e47f3631",
+            "date": "2021-6-18",
+            "aggregated": {
+                "blank": 1384,
+                "comment": 688,
+                "code": 12659,
+                "nFiles": 158
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 275,
+                    "blank": 3231,
+                    "comment": 1768,
+                    "code": 32022
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 54,
+                    "blank": 195,
+                    "comment": 105,
+                    "code": 1347
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 6,
+                    "blank": 171,
+                    "comment": 63,
+                    "code": 720
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 30,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 636
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 48,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 591
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 9,
+                    "blank": 39,
+                    "comment": 15,
+                    "code": 459
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 15,
+                    "blank": 60,
+                    "comment": 0,
+                    "code": 438
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 3,
+                    "blank": 180,
+                    "comment": 0,
+                    "code": 420
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 3,
+                    "blank": 57,
+                    "comment": 60,
+                    "code": 363
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 12,
+                    "blank": 60,
+                    "comment": 6,
+                    "code": 360
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 3,
+                    "blank": 72,
+                    "comment": 6,
+                    "code": 192
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 3,
+                    "blank": 57,
+                    "comment": 24,
+                    "code": 177
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 3,
+                    "blank": 9,
+                    "comment": 15,
+                    "code": 117
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 6,
+                    "blank": 12,
+                    "comment": 0,
+                    "code": 24
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 3,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 3
+                }
+            ]
+        },
+        {
+            "hash": "bd020e3a9e701a1ac61375e5c8ab58fb41c469b0",
+            "date": "2021-6-21",
+            "aggregated": {
+                "blank": 1453,
+                "comment": 814,
+                "code": 13182,
+                "nFiles": 166
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 475,
+                    "blank": 5653,
+                    "comment": 3372,
+                    "code": 55514
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 90,
+                    "blank": 325,
+                    "comment": 175,
+                    "code": 2245
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 92,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1126
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 10,
+                    "blank": 285,
+                    "comment": 105,
+                    "code": 1200
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 50,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1060
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 15,
+                    "blank": 65,
+                    "comment": 25,
+                    "code": 771
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 25,
+                    "blank": 100,
+                    "comment": 0,
+                    "code": 730
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 5,
+                    "blank": 300,
+                    "comment": 0,
+                    "code": 700
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 5,
+                    "blank": 95,
+                    "comment": 100,
+                    "code": 605
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 20,
+                    "blank": 100,
+                    "comment": 10,
+                    "code": 600
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 5,
+                    "blank": 120,
+                    "comment": 10,
+                    "code": 320
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 5,
+                    "blank": 95,
+                    "comment": 40,
+                    "code": 295
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 5,
+                    "blank": 15,
+                    "comment": 25,
+                    "code": 198
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 10,
+                    "blank": 20,
+                    "comment": 0,
+                    "code": 40
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 5,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 5
+                }
+            ]
+        },
+        {
+            "hash": "f83f3ece5acfa3c5664779cf335360e8778f77a0",
+            "date": "2021-6-22",
+            "aggregated": {
+                "blank": 1455,
+                "comment": 814,
+                "code": 13258,
+                "nFiles": 165
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 190,
+                    "blank": 2302,
+                    "comment": 1432,
+                    "code": 22518
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 36,
+                    "blank": 130,
+                    "comment": 70,
+                    "code": 898
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 40,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 488
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 4,
+                    "blank": 114,
+                    "comment": 42,
+                    "code": 480
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 20,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 424
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 6,
+                    "blank": 26,
+                    "comment": 10,
+                    "code": 310
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 10,
+                    "blank": 40,
+                    "comment": 0,
+                    "code": 292
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 2,
+                    "blank": 120,
+                    "comment": 0,
+                    "code": 280
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 2,
+                    "blank": 38,
+                    "comment": 40,
+                    "code": 242
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 8,
+                    "blank": 40,
+                    "comment": 4,
+                    "code": 240
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 2,
+                    "blank": 48,
+                    "comment": 4,
+                    "code": 128
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 2,
+                    "blank": 38,
+                    "comment": 16,
+                    "code": 118
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 2,
+                    "blank": 6,
+                    "comment": 10,
+                    "code": 80
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 4,
+                    "blank": 8,
+                    "comment": 0,
+                    "code": 16
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 2,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 2
+                }
+            ]
+        },
+        {
+            "hash": "9ead9959606ada19b1dcfbfbe2f7dc0b3b6c9d11",
+            "date": "2021-6-23",
+            "aggregated": {
+                "blank": 1495,
+                "comment": 873,
+                "code": 13690,
+                "nFiles": 164
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 1354,
+                    "blank": 16544,
+                    "comment": 10352,
+                    "code": 161360
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 252,
+                    "blank": 910,
+                    "comment": 490,
+                    "code": 6286
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 287,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 3909
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 28,
+                    "blank": 798,
+                    "comment": 294,
+                    "code": 3360
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 140,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 2968
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 51,
+                    "blank": 182,
+                    "comment": 79,
+                    "code": 2227
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 70,
+                    "blank": 280,
+                    "comment": 0,
+                    "code": 2044
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 14,
+                    "blank": 840,
+                    "comment": 0,
+                    "code": 1960
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 14,
+                    "blank": 266,
+                    "comment": 280,
+                    "code": 1694
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 56,
+                    "blank": 280,
+                    "comment": 28,
+                    "code": 1680
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 14,
+                    "blank": 336,
+                    "comment": 28,
+                    "code": 896
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 14,
+                    "blank": 266,
+                    "comment": 112,
+                    "code": 826
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 14,
+                    "blank": 42,
+                    "comment": 70,
+                    "code": 558
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 28,
+                    "blank": 56,
+                    "comment": 0,
+                    "code": 112
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 14,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 14
+                }
+            ]
+        },
+        {
+            "hash": "76c8a9528cd0b806d1a1f3903de811e1ae926932",
+            "date": "2021-6-24",
+            "aggregated": {
+                "blank": 1498,
+                "comment": 885,
+                "code": 13709,
+                "nFiles": 164
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 192,
+                    "blank": 2388,
+                    "comment": 1574,
+                    "code": 23436
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 36,
+                    "blank": 130,
+                    "comment": 70,
+                    "code": 898
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 36,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 480
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 4,
+                    "blank": 114,
+                    "comment": 42,
+                    "code": 480
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 20,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 424
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 6,
+                    "blank": 26,
+                    "comment": 10,
+                    "code": 304
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 10,
+                    "blank": 40,
+                    "comment": 0,
+                    "code": 292
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 2,
+                    "blank": 120,
+                    "comment": 0,
+                    "code": 280
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 2,
+                    "blank": 38,
+                    "comment": 40,
+                    "code": 242
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 8,
+                    "blank": 40,
+                    "comment": 4,
+                    "code": 240
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 2,
+                    "blank": 48,
+                    "comment": 4,
+                    "code": 128
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 2,
+                    "blank": 38,
+                    "comment": 16,
+                    "code": 118
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 2,
+                    "blank": 6,
+                    "comment": 10,
+                    "code": 78
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 4,
+                    "blank": 8,
+                    "comment": 0,
+                    "code": 16
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 2,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 2
+                }
+            ]
+        },
+        {
+            "hash": "3fcc58b161a9bc0fb16a241aea52a4d94c3d7546",
+            "date": "2021-6-25",
+            "aggregated": {
+                "blank": 1531,
+                "comment": 869,
+                "code": 14247,
+                "nFiles": 176
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 409,
+                    "blank": 4885,
+                    "comment": 3081,
+                    "code": 48312
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 72,
+                    "blank": 260,
+                    "comment": 140,
+                    "code": 1796
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 88,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1188
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 8,
+                    "blank": 228,
+                    "comment": 84,
+                    "code": 960
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 40,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 848
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 16,
+                    "blank": 52,
+                    "comment": 24,
+                    "code": 648
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 20,
+                    "blank": 80,
+                    "comment": 0,
+                    "code": 584
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 4,
+                    "blank": 240,
+                    "comment": 0,
+                    "code": 560
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 4,
+                    "blank": 76,
+                    "comment": 80,
+                    "code": 484
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 16,
+                    "blank": 80,
+                    "comment": 8,
+                    "code": 480
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 4,
+                    "blank": 96,
+                    "comment": 8,
+                    "code": 256
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 4,
+                    "blank": 76,
+                    "comment": 32,
+                    "code": 236
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 4,
+                    "blank": 12,
+                    "comment": 20,
+                    "code": 160
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 8,
+                    "blank": 16,
+                    "comment": 0,
+                    "code": 32
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 4,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 4
+                }
+            ]
+        },
+        {
+            "hash": "f6c27092bd3a8292772c2436dd2762065d4173fb",
+            "date": "2021-6-27",
+            "aggregated": {
+                "blank": 1502,
+                "comment": 975,
+                "code": 13795,
+                "nFiles": 165
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 192,
+                    "blank": 2396,
+                    "comment": 1754,
+                    "code": 23594
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 36,
+                    "blank": 130,
+                    "comment": 70,
+                    "code": 898
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 38,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 494
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 4,
+                    "blank": 114,
+                    "comment": 42,
+                    "code": 480
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 20,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 424
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 6,
+                    "blank": 26,
+                    "comment": 10,
+                    "code": 304
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 10,
+                    "blank": 40,
+                    "comment": 0,
+                    "code": 292
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 2,
+                    "blank": 120,
+                    "comment": 0,
+                    "code": 280
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 2,
+                    "blank": 38,
+                    "comment": 40,
+                    "code": 242
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 8,
+                    "blank": 40,
+                    "comment": 4,
+                    "code": 240
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 2,
+                    "blank": 48,
+                    "comment": 4,
+                    "code": 128
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 2,
+                    "blank": 38,
+                    "comment": 16,
+                    "code": 118
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 2,
+                    "blank": 6,
+                    "comment": 10,
+                    "code": 78
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 4,
+                    "blank": 8,
+                    "comment": 0,
+                    "code": 16
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 2,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 2
+                }
+            ]
+        },
+        {
+            "hash": "077ad1a76873c903a4d31f801ec6735301d47369",
+            "date": "2021-6-28",
+            "aggregated": {
+                "blank": 1573,
+                "comment": 768,
+                "code": 14476,
+                "nFiles": 168
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 507,
+                    "blank": 6282,
+                    "comment": 3736,
+                    "code": 62097
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 90,
+                    "blank": 325,
+                    "comment": 175,
+                    "code": 2245
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 104,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1385
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 10,
+                    "blank": 285,
+                    "comment": 105,
+                    "code": 1200
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 50,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1060
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 18,
+                    "blank": 65,
+                    "comment": 28,
+                    "code": 790
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 25,
+                    "blank": 100,
+                    "comment": 0,
+                    "code": 730
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 5,
+                    "blank": 300,
+                    "comment": 0,
+                    "code": 700
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 5,
+                    "blank": 95,
+                    "comment": 100,
+                    "code": 605
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 20,
+                    "blank": 100,
+                    "comment": 10,
+                    "code": 600
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 5,
+                    "blank": 120,
+                    "comment": 10,
+                    "code": 320
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 5,
+                    "blank": 95,
+                    "comment": 40,
+                    "code": 295
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 5,
+                    "blank": 15,
+                    "comment": 25,
+                    "code": 198
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 10,
+                    "blank": 20,
+                    "comment": 0,
+                    "code": 40
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 5,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 5
+                }
+            ]
+        },
+        {
+            "hash": "43101369fe1b2064599e49921631a837c54d8e48",
+            "date": "2021-6-30",
+            "aggregated": {
+                "blank": 1603,
+                "comment": 917,
+                "code": 14849,
+                "nFiles": 178
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 524,
+                    "blank": 6464,
+                    "comment": 4098,
+                    "code": 63605
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 90,
+                    "blank": 325,
+                    "comment": 175,
+                    "code": 2245
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 110,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1485
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 10,
+                    "blank": 285,
+                    "comment": 105,
+                    "code": 1200
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 50,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1060
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 20,
+                    "blank": 65,
+                    "comment": 30,
+                    "code": 810
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 25,
+                    "blank": 100,
+                    "comment": 0,
+                    "code": 730
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 5,
+                    "blank": 300,
+                    "comment": 0,
+                    "code": 700
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 5,
+                    "blank": 95,
+                    "comment": 100,
+                    "code": 605
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 20,
+                    "blank": 100,
+                    "comment": 10,
+                    "code": 600
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 5,
+                    "blank": 120,
+                    "comment": 10,
+                    "code": 320
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 5,
+                    "blank": 95,
+                    "comment": 40,
+                    "code": 295
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 5,
+                    "blank": 15,
+                    "comment": 25,
+                    "code": 200
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 10,
+                    "blank": 20,
+                    "comment": 0,
+                    "code": 40
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 5,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 5
+                }
+            ]
+        },
+        {
+            "hash": "7bd6339cc982e34b3a401a3b437b6439b27a63be",
+            "date": "2021-7-1",
+            "aggregated": {
+                "blank": 1542,
+                "comment": 871,
+                "code": 14178,
+                "nFiles": 171
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 396,
+                    "blank": 4950,
+                    "comment": 3103,
+                    "code": 48519
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 72,
+                    "blank": 260,
+                    "comment": 140,
+                    "code": 1804
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 80,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1044
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 8,
+                    "blank": 228,
+                    "comment": 84,
+                    "code": 960
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 44,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 912
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 16,
+                    "blank": 52,
+                    "comment": 20,
+                    "code": 636
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 20,
+                    "blank": 80,
+                    "comment": 0,
+                    "code": 584
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 4,
+                    "blank": 240,
+                    "comment": 0,
+                    "code": 560
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 4,
+                    "blank": 76,
+                    "comment": 80,
+                    "code": 484
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 16,
+                    "blank": 80,
+                    "comment": 8,
+                    "code": 480
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 4,
+                    "blank": 96,
+                    "comment": 8,
+                    "code": 256
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 4,
+                    "blank": 76,
+                    "comment": 32,
+                    "code": 236
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 4,
+                    "blank": 12,
+                    "comment": 20,
+                    "code": 156
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 8,
+                    "blank": 16,
+                    "comment": 0,
+                    "code": 32
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 4,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 4
+                }
+            ]
+        },
+        {
+            "hash": "2c5fde4e9840c145310a3cf3269ac2ec75eeb4f8",
+            "date": "2021-7-2",
+            "aggregated": {
+                "blank": 1676,
+                "comment": 919,
+                "code": 14952,
+                "nFiles": 180
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 519,
+                    "blank": 6598,
+                    "comment": 3891,
+                    "code": 63046
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 90,
+                    "blank": 325,
+                    "comment": 175,
+                    "code": 2249
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 106,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1413
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 10,
+                    "blank": 285,
+                    "comment": 105,
+                    "code": 1200
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 52,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1092
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 20,
+                    "blank": 65,
+                    "comment": 25,
+                    "code": 801
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 25,
+                    "blank": 100,
+                    "comment": 0,
+                    "code": 730
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 5,
+                    "blank": 300,
+                    "comment": 0,
+                    "code": 700
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 5,
+                    "blank": 95,
+                    "comment": 100,
+                    "code": 605
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 20,
+                    "blank": 100,
+                    "comment": 10,
+                    "code": 600
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 5,
+                    "blank": 120,
+                    "comment": 10,
+                    "code": 320
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 5,
+                    "blank": 95,
+                    "comment": 40,
+                    "code": 295
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 5,
+                    "blank": 15,
+                    "comment": 25,
+                    "code": 198
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 10,
+                    "blank": 20,
+                    "comment": 0,
+                    "code": 40
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 5,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 5
+                }
+            ]
+        },
+        {
+            "hash": "1396a84ae68f03d560b2d03db0d0ece58f94b92f",
+            "date": "2021-7-4",
+            "aggregated": {
+                "blank": 1662,
+                "comment": 949,
+                "code": 14772,
+                "nFiles": 180
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 414,
+                    "blank": 5224,
+                    "comment": 3113,
+                    "code": 50076
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 72,
+                    "blank": 260,
+                    "comment": 140,
+                    "code": 1800
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 84,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1116
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 8,
+                    "blank": 228,
+                    "comment": 84,
+                    "code": 960
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 42,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 880
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 16,
+                    "blank": 52,
+                    "comment": 20,
+                    "code": 640
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 20,
+                    "blank": 80,
+                    "comment": 0,
+                    "code": 584
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 4,
+                    "blank": 240,
+                    "comment": 0,
+                    "code": 560
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 4,
+                    "blank": 76,
+                    "comment": 80,
+                    "code": 484
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 16,
+                    "blank": 80,
+                    "comment": 8,
+                    "code": 480
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 4,
+                    "blank": 96,
+                    "comment": 8,
+                    "code": 256
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 4,
+                    "blank": 76,
+                    "comment": 32,
+                    "code": 236
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 4,
+                    "blank": 12,
+                    "comment": 20,
+                    "code": 158
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 8,
+                    "blank": 16,
+                    "comment": 0,
+                    "code": 32
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 4,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 4
+                }
+            ]
+        },
+        {
+            "hash": "e86e136c7eeb73c3cad4c25963607cc592d18659",
+            "date": "2021-7-5",
+            "aggregated": {
+                "blank": 1558,
+                "comment": 849,
+                "code": 14405,
+                "nFiles": 170
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 1013,
+                    "blank": 12959,
+                    "comment": 8100,
+                    "code": 126040
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 180,
+                    "blank": 650,
+                    "comment": 350,
+                    "code": 4502
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 208,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 2754
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 20,
+                    "blank": 570,
+                    "comment": 210,
+                    "code": 2400
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 106,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 2216
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 40,
+                    "blank": 130,
+                    "comment": 50,
+                    "code": 1598
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 50,
+                    "blank": 200,
+                    "comment": 0,
+                    "code": 1460
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 10,
+                    "blank": 600,
+                    "comment": 0,
+                    "code": 1400
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 10,
+                    "blank": 190,
+                    "comment": 200,
+                    "code": 1210
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 40,
+                    "blank": 200,
+                    "comment": 20,
+                    "code": 1200
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 10,
+                    "blank": 240,
+                    "comment": 20,
+                    "code": 640
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 10,
+                    "blank": 190,
+                    "comment": 80,
+                    "code": 590
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 10,
+                    "blank": 30,
+                    "comment": 50,
+                    "code": 394
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 20,
+                    "blank": 40,
+                    "comment": 0,
+                    "code": 80
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 10,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 10
+                }
+            ]
+        },
+        {
+            "hash": "fef2536254af44682b655343649c6adbbbfaf7ff",
+            "date": "2021-7-6",
+            "aggregated": {
+                "blank": 1578,
+                "comment": 842,
+                "code": 14469,
+                "nFiles": 171
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 601,
+                    "blank": 7760,
+                    "comment": 4695,
+                    "code": 75504
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 108,
+                    "blank": 390,
+                    "comment": 210,
+                    "code": 2704
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 122,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1602
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 12,
+                    "blank": 342,
+                    "comment": 126,
+                    "code": 1440
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 66,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1371
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 24,
+                    "blank": 78,
+                    "comment": 30,
+                    "code": 957
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 30,
+                    "blank": 120,
+                    "comment": 0,
+                    "code": 876
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 6,
+                    "blank": 360,
+                    "comment": 0,
+                    "code": 840
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 6,
+                    "blank": 114,
+                    "comment": 120,
+                    "code": 726
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 24,
+                    "blank": 120,
+                    "comment": 12,
+                    "code": 720
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 6,
+                    "blank": 144,
+                    "comment": 12,
+                    "code": 384
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 6,
+                    "blank": 114,
+                    "comment": 48,
+                    "code": 354
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 6,
+                    "blank": 18,
+                    "comment": 30,
+                    "code": 235
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 12,
+                    "blank": 24,
+                    "comment": 0,
+                    "code": 48
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 6,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 6
+                }
+            ]
+        },
+        {
+            "hash": "7f7bda274832481e8ab9f89eb647797f522cfc0b",
+            "date": "2021-7-7",
+            "aggregated": {
+                "blank": 1703,
+                "comment": 1240,
+                "code": 15528,
+                "nFiles": 180
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 826,
+                    "blank": 10758,
+                    "comment": 7491,
+                    "code": 103173
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 144,
+                    "blank": 520,
+                    "comment": 280,
+                    "code": 3640
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 170,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 2268
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 16,
+                    "blank": 456,
+                    "comment": 168,
+                    "code": 1920
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 87,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1820
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 32,
+                    "blank": 105,
+                    "comment": 41,
+                    "code": 1284
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 8,
+                    "blank": 24,
+                    "comment": 40,
+                    "code": 671
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 40,
+                    "blank": 160,
+                    "comment": 0,
+                    "code": 1168
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 8,
+                    "blank": 480,
+                    "comment": 0,
+                    "code": 1120
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 8,
+                    "blank": 152,
+                    "comment": 160,
+                    "code": 968
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 32,
+                    "blank": 160,
+                    "comment": 16,
+                    "code": 960
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 8,
+                    "blank": 192,
+                    "comment": 16,
+                    "code": 512
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 8,
+                    "blank": 152,
+                    "comment": 64,
+                    "code": 472
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 16,
+                    "blank": 32,
+                    "comment": 0,
+                    "code": 64
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 8,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 8
+                }
+            ]
+        },
+        {
+            "hash": "3dbcbe7749f7136cc57d61c2c85a5af45ef632b4",
+            "date": "2021-7-8",
+            "aggregated": {
+                "blank": 1587,
+                "comment": 825,
+                "code": 14648,
+                "nFiles": 171
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 297,
+                    "blank": 3841,
+                    "comment": 2175,
+                    "code": 37667
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 54,
+                    "blank": 195,
+                    "comment": 105,
+                    "code": 1353
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 60,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 783
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 6,
+                    "blank": 171,
+                    "comment": 63,
+                    "code": 720
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 33,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 684
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 12,
+                    "blank": 39,
+                    "comment": 15,
+                    "code": 477
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 15,
+                    "blank": 60,
+                    "comment": 0,
+                    "code": 438
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 3,
+                    "blank": 180,
+                    "comment": 0,
+                    "code": 420
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 3,
+                    "blank": 57,
+                    "comment": 60,
+                    "code": 363
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 12,
+                    "blank": 60,
+                    "comment": 6,
+                    "code": 360
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 3,
+                    "blank": 72,
+                    "comment": 6,
+                    "code": 192
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 3,
+                    "blank": 57,
+                    "comment": 24,
+                    "code": 177
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 3,
+                    "blank": 9,
+                    "comment": 15,
+                    "code": 117
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 6,
+                    "blank": 12,
+                    "comment": 0,
+                    "code": 24
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 3,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 3
+                }
+            ]
+        },
+        {
+            "hash": "d70f224e57a3dfffca12687efab9ac09a7e14e1f",
+            "date": "2021-7-9",
+            "aggregated": {
+                "blank": 1893,
+                "comment": 1283,
+                "code": 17682,
+                "nFiles": 194
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 861,
+                    "blank": 11294,
+                    "comment": 7991,
+                    "code": 109039
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 144,
+                    "blank": 520,
+                    "comment": 280,
+                    "code": 3705
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 176,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 2346
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 16,
+                    "blank": 456,
+                    "comment": 168,
+                    "code": 1920
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 87,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1823
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 32,
+                    "blank": 104,
+                    "comment": 40,
+                    "code": 1274
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 40,
+                    "blank": 160,
+                    "comment": 0,
+                    "code": 1168
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 8,
+                    "blank": 480,
+                    "comment": 0,
+                    "code": 1120
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 8,
+                    "blank": 152,
+                    "comment": 160,
+                    "code": 968
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 32,
+                    "blank": 160,
+                    "comment": 16,
+                    "code": 960
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 8,
+                    "blank": 192,
+                    "comment": 16,
+                    "code": 512
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 8,
+                    "blank": 152,
+                    "comment": 64,
+                    "code": 472
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 8,
+                    "blank": 24,
+                    "comment": 40,
+                    "code": 318
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 16,
+                    "blank": 32,
+                    "comment": 0,
+                    "code": 64
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 8,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 8
+                }
+            ]
+        },
+        {
+            "hash": "9e2abbb33ab1fe4bc40f09b319b9453c542d3d55",
+            "date": "2021-7-11",
+            "aggregated": {
+                "blank": 1893,
+                "comment": 1284,
+                "code": 17735,
+                "nFiles": 194
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 356,
+                    "blank": 4809,
+                    "comment": 3602,
+                    "code": 47182
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 54,
+                    "blank": 195,
+                    "comment": 105,
+                    "code": 1416
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 73,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 955
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 6,
+                    "blank": 171,
+                    "comment": 63,
+                    "code": 720
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 33,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 693
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 12,
+                    "blank": 39,
+                    "comment": 15,
+                    "code": 477
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 15,
+                    "blank": 60,
+                    "comment": 0,
+                    "code": 438
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 3,
+                    "blank": 180,
+                    "comment": 0,
+                    "code": 420
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 3,
+                    "blank": 57,
+                    "comment": 60,
+                    "code": 363
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 12,
+                    "blank": 60,
+                    "comment": 6,
+                    "code": 360
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 3,
+                    "blank": 72,
+                    "comment": 6,
+                    "code": 192
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 3,
+                    "blank": 57,
+                    "comment": 24,
+                    "code": 177
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 3,
+                    "blank": 9,
+                    "comment": 15,
+                    "code": 120
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 6,
+                    "blank": 12,
+                    "comment": 0,
+                    "code": 24
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 3,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 3
+                }
+            ]
+        },
+        {
+            "hash": "ddb9f40141de211e8029ae4a36937ce53e4a5cb4",
+            "date": "2021-7-12",
+            "aggregated": {
+                "blank": 1969,
+                "comment": 1336,
+                "code": 18390,
+                "nFiles": 200
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 713,
+                    "blank": 9580,
+                    "comment": 6998,
+                    "code": 93001
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 108,
+                    "blank": 390,
+                    "comment": 210,
+                    "code": 2809
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 146,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1891
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 12,
+                    "blank": 342,
+                    "comment": 126,
+                    "code": 1440
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 65,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1367
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 24,
+                    "blank": 78,
+                    "comment": 30,
+                    "code": 956
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 30,
+                    "blank": 120,
+                    "comment": 0,
+                    "code": 876
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 6,
+                    "blank": 360,
+                    "comment": 0,
+                    "code": 840
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 6,
+                    "blank": 114,
+                    "comment": 120,
+                    "code": 726
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 24,
+                    "blank": 120,
+                    "comment": 12,
+                    "code": 720
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 6,
+                    "blank": 144,
+                    "comment": 12,
+                    "code": 384
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 6,
+                    "blank": 114,
+                    "comment": 48,
+                    "code": 354
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 6,
+                    "blank": 18,
+                    "comment": 30,
+                    "code": 240
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 12,
+                    "blank": 24,
+                    "comment": 0,
+                    "code": 48
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 6,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 6
+                }
+            ]
+        },
+        {
+            "hash": "3ba3a56012cf3209467cbfa00e74d2c677577e58",
+            "date": "2021-7-13",
+            "aggregated": {
+                "blank": 1931,
+                "comment": 1364,
+                "code": 18209,
+                "nFiles": 197
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 1084,
+                    "blank": 14757,
+                    "comment": 11361,
+                    "code": 145358
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 162,
+                    "blank": 585,
+                    "comment": 315,
+                    "code": 4248
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 224,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 2870
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 18,
+                    "blank": 513,
+                    "comment": 189,
+                    "code": 2160
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 99,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 2079
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 36,
+                    "blank": 117,
+                    "comment": 45,
+                    "code": 1431
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 45,
+                    "blank": 180,
+                    "comment": 0,
+                    "code": 1314
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 9,
+                    "blank": 540,
+                    "comment": 0,
+                    "code": 1260
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 9,
+                    "blank": 171,
+                    "comment": 180,
+                    "code": 1089
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 36,
+                    "blank": 180,
+                    "comment": 18,
+                    "code": 1080
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 9,
+                    "blank": 216,
+                    "comment": 18,
+                    "code": 576
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 9,
+                    "blank": 171,
+                    "comment": 72,
+                    "code": 531
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 9,
+                    "blank": 27,
+                    "comment": 45,
+                    "code": 360
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 18,
+                    "blank": 36,
+                    "comment": 0,
+                    "code": 72
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 9,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 9
+                }
+            ]
+        },
+        {
+            "hash": "b6d1236e9607c87509d968bb3b475876eaed244e",
+            "date": "2021-7-14",
+            "aggregated": {
+                "blank": 1966,
+                "comment": 1466,
+                "code": 18284,
+                "nFiles": 197
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 1763,
+                    "blank": 24115,
+                    "comment": 18771,
+                    "code": 234779
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 270,
+                    "blank": 975,
+                    "comment": 525,
+                    "code": 7022
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 369,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 4741
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 174,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 3548
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 30,
+                    "blank": 855,
+                    "comment": 315,
+                    "code": 3600
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 60,
+                    "blank": 195,
+                    "comment": 75,
+                    "code": 2383
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 75,
+                    "blank": 300,
+                    "comment": 0,
+                    "code": 2190
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 15,
+                    "blank": 900,
+                    "comment": 0,
+                    "code": 2100
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 15,
+                    "blank": 285,
+                    "comment": 300,
+                    "code": 1815
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 60,
+                    "blank": 300,
+                    "comment": 30,
+                    "code": 1800
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 15,
+                    "blank": 360,
+                    "comment": 30,
+                    "code": 960
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 15,
+                    "blank": 285,
+                    "comment": 120,
+                    "code": 885
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 15,
+                    "blank": 45,
+                    "comment": 75,
+                    "code": 600
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 30,
+                    "blank": 48,
+                    "comment": 0,
+                    "code": 180
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 15,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 15
+                }
+            ]
+        },
+        {
+            "hash": "c45e49472ab02356e18af948de8a27a314d25787",
+            "date": "2021-7-15",
+            "aggregated": {
+                "blank": 1995,
+                "comment": 1694,
+                "code": 18536,
+                "nFiles": 205
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 2778,
+                    "blank": 38652,
+                    "comment": 31949,
+                    "code": 374436
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 414,
+                    "blank": 1495,
+                    "comment": 805,
+                    "code": 10833
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 689,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 8040
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 276,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 5588
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 46,
+                    "blank": 1311,
+                    "comment": 483,
+                    "code": 5520
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 92,
+                    "blank": 299,
+                    "comment": 115,
+                    "code": 3653
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 115,
+                    "blank": 460,
+                    "comment": 0,
+                    "code": 3358
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 23,
+                    "blank": 1380,
+                    "comment": 0,
+                    "code": 3220
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 23,
+                    "blank": 437,
+                    "comment": 460,
+                    "code": 2783
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 92,
+                    "blank": 460,
+                    "comment": 46,
+                    "code": 2760
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 23,
+                    "blank": 552,
+                    "comment": 46,
+                    "code": 1472
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 23,
+                    "blank": 437,
+                    "comment": 184,
+                    "code": 1357
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 23,
+                    "blank": 69,
+                    "comment": 115,
+                    "code": 920
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 46,
+                    "blank": 69,
+                    "comment": 0,
+                    "code": 299
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 23,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 23
+                }
+            ]
+        },
+        {
+            "hash": "b7edfd0c5c1c8ea923f7ff2182dc868d0c6bbeb5",
+            "date": "2021-7-16",
+            "aggregated": {
+                "blank": 1998,
+                "comment": 1539,
+                "code": 18778,
+                "nFiles": 204
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 1329,
+                    "blank": 18680,
+                    "comment": 17151,
+                    "code": 181847
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 198,
+                    "blank": 715,
+                    "comment": 385,
+                    "code": 5181
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 341,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 3916
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 132,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 2673
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 22,
+                    "blank": 627,
+                    "comment": 231,
+                    "code": 2640
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 44,
+                    "blank": 143,
+                    "comment": 55,
+                    "code": 1765
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 55,
+                    "blank": 220,
+                    "comment": 0,
+                    "code": 1606
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 11,
+                    "blank": 660,
+                    "comment": 0,
+                    "code": 1540
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 11,
+                    "blank": 209,
+                    "comment": 220,
+                    "code": 1331
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 44,
+                    "blank": 220,
+                    "comment": 22,
+                    "code": 1320
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 11,
+                    "blank": 264,
+                    "comment": 22,
+                    "code": 704
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 11,
+                    "blank": 209,
+                    "comment": 88,
+                    "code": 649
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 11,
+                    "blank": 33,
+                    "comment": 55,
+                    "code": 440
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 22,
+                    "blank": 33,
+                    "comment": 0,
+                    "code": 143
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 11,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 11
+                }
+            ]
+        },
+        {
+            "hash": "6a8ecc99d2c834c8d11a58cab776a988c5c1814e",
+            "date": "2021-7-18",
+            "aggregated": {
+                "blank": 1999,
+                "comment": 1540,
+                "code": 18777,
+                "nFiles": 204
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 240,
+                    "blank": 3392,
+                    "comment": 2884,
+                    "code": 33200
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 36,
+                    "blank": 130,
+                    "comment": 70,
+                    "code": 942
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 62,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 712
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 24,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 486
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 4,
+                    "blank": 114,
+                    "comment": 42,
+                    "code": 480
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 8,
+                    "blank": 26,
+                    "comment": 10,
+                    "code": 326
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 10,
+                    "blank": 40,
+                    "comment": 0,
+                    "code": 292
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 2,
+                    "blank": 120,
+                    "comment": 0,
+                    "code": 280
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 2,
+                    "blank": 38,
+                    "comment": 40,
+                    "code": 242
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 8,
+                    "blank": 40,
+                    "comment": 4,
+                    "code": 240
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 2,
+                    "blank": 48,
+                    "comment": 4,
+                    "code": 128
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 2,
+                    "blank": 38,
+                    "comment": 16,
+                    "code": 118
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 2,
+                    "blank": 6,
+                    "comment": 10,
+                    "code": 80
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 4,
+                    "blank": 6,
+                    "comment": 0,
+                    "code": 26
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 2,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 2
+                }
+            ]
+        },
+        {
+            "hash": "b322af89e75b6ca73d478f348368d4177b4c9732",
+            "date": "2021-7-19",
+            "aggregated": {
+                "blank": 2007,
+                "comment": 1571,
+                "code": 18861,
+                "nFiles": 205
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 1329,
+                    "blank": 18716,
+                    "comment": 16133,
+                    "code": 183204
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 198,
+                    "blank": 715,
+                    "comment": 385,
+                    "code": 5181
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 341,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 3916
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 132,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 2673
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 22,
+                    "blank": 627,
+                    "comment": 231,
+                    "code": 2640
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 44,
+                    "blank": 143,
+                    "comment": 55,
+                    "code": 1793
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 55,
+                    "blank": 220,
+                    "comment": 0,
+                    "code": 1606
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 11,
+                    "blank": 660,
+                    "comment": 0,
+                    "code": 1540
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 11,
+                    "blank": 209,
+                    "comment": 220,
+                    "code": 1331
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 44,
+                    "blank": 220,
+                    "comment": 22,
+                    "code": 1320
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 11,
+                    "blank": 264,
+                    "comment": 22,
+                    "code": 704
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 11,
+                    "blank": 209,
+                    "comment": 88,
+                    "code": 649
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 11,
+                    "blank": 33,
+                    "comment": 55,
+                    "code": 440
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 22,
+                    "blank": 33,
+                    "comment": 0,
+                    "code": 143
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 11,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 11
+                }
+            ]
+        },
+        {
+            "hash": "e6cb613e57829ad00982f8d93a63872bf1503162",
+            "date": "2021-7-20",
+            "aggregated": {
+                "blank": 2007,
+                "comment": 1563,
+                "code": 18929,
+                "nFiles": 205
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 484,
+                    "blank": 6816,
+                    "comment": 5862,
+                    "code": 67008
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 72,
+                    "blank": 260,
+                    "comment": 140,
+                    "code": 1884
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 124,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1424
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 48,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 972
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 8,
+                    "blank": 228,
+                    "comment": 84,
+                    "code": 960
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 16,
+                    "blank": 52,
+                    "comment": 20,
+                    "code": 652
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 20,
+                    "blank": 80,
+                    "comment": 0,
+                    "code": 584
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 4,
+                    "blank": 240,
+                    "comment": 0,
+                    "code": 560
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 4,
+                    "blank": 76,
+                    "comment": 80,
+                    "code": 484
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 16,
+                    "blank": 80,
+                    "comment": 8,
+                    "code": 480
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 4,
+                    "blank": 96,
+                    "comment": 8,
+                    "code": 256
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 4,
+                    "blank": 76,
+                    "comment": 32,
+                    "code": 236
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 4,
+                    "blank": 12,
+                    "comment": 20,
+                    "code": 160
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 8,
+                    "blank": 12,
+                    "comment": 0,
+                    "code": 52
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 4,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 4
+                }
+            ]
+        },
+        {
+            "hash": "e53556ed8218b6a4ddc796b79f983aa66a13d2d3",
+            "date": "2021-7-21",
+            "aggregated": {
+                "blank": 2029,
+                "comment": 1576,
+                "code": 19011,
+                "nFiles": 206
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 726,
+                    "blank": 10308,
+                    "comment": 8846,
+                    "code": 100877
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 108,
+                    "blank": 394,
+                    "comment": 210,
+                    "code": 2750
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 189,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 2183
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 12,
+                    "blank": 346,
+                    "comment": 126,
+                    "code": 1484
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 72,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1458
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 24,
+                    "blank": 78,
+                    "comment": 30,
+                    "code": 982
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 30,
+                    "blank": 120,
+                    "comment": 0,
+                    "code": 876
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 6,
+                    "blank": 360,
+                    "comment": 0,
+                    "code": 840
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 6,
+                    "blank": 114,
+                    "comment": 120,
+                    "code": 726
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 24,
+                    "blank": 120,
+                    "comment": 12,
+                    "code": 720
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 6,
+                    "blank": 144,
+                    "comment": 12,
+                    "code": 384
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 6,
+                    "blank": 114,
+                    "comment": 48,
+                    "code": 354
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 6,
+                    "blank": 18,
+                    "comment": 30,
+                    "code": 244
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 12,
+                    "blank": 18,
+                    "comment": 0,
+                    "code": 78
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 6,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 6
+                }
+            ]
+        },
+        {
+            "hash": "392ca63ba084a8db4a654d4dd7fc55722dd3d59c",
+            "date": "2021-7-22",
+            "aggregated": {
+                "blank": 2076,
+                "comment": 1586,
+                "code": 19094,
+                "nFiles": 209
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 978,
+                    "blank": 13938,
+                    "comment": 11875,
+                    "code": 134824
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 144,
+                    "blank": 528,
+                    "comment": 280,
+                    "code": 3616
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 256,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 3032
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 16,
+                    "blank": 464,
+                    "comment": 168,
+                    "code": 2008
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 96,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1944
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 32,
+                    "blank": 104,
+                    "comment": 40,
+                    "code": 1316
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 40,
+                    "blank": 160,
+                    "comment": 0,
+                    "code": 1168
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 8,
+                    "blank": 480,
+                    "comment": 0,
+                    "code": 1120
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 8,
+                    "blank": 152,
+                    "comment": 160,
+                    "code": 968
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 32,
+                    "blank": 160,
+                    "comment": 16,
+                    "code": 960
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 8,
+                    "blank": 192,
+                    "comment": 16,
+                    "code": 512
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 8,
+                    "blank": 152,
+                    "comment": 64,
+                    "code": 472
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 8,
+                    "blank": 24,
+                    "comment": 40,
+                    "code": 328
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 16,
+                    "blank": 24,
+                    "comment": 0,
+                    "code": 104
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 8,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 8
+                }
+            ]
+        },
+        {
+            "hash": "11ef06a123b00cc65ecf5ca8b03ef9e673dd9708",
+            "date": "2021-7-23",
+            "aggregated": {
+                "blank": 2070,
+                "comment": 1568,
+                "code": 19125,
+                "nFiles": 209
+            },
+            "fileData": [
+                {
+                    "lang": "Dart",
+                    "nFiles": 372,
+                    "blank": 5294,
+                    "comment": 4410,
+                    "code": 50789
+                },
+                {
+                    "lang": "XML",
+                    "nFiles": 54,
+                    "blank": 198,
+                    "comment": 105,
+                    "code": 1356
+                },
+                {
+                    "lang": "SVG",
+                    "nFiles": 96,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 1137
+                },
+                {
+                    "lang": "Swift",
+                    "nFiles": 6,
+                    "blank": 174,
+                    "comment": 63,
+                    "code": 753
+                },
+                {
+                    "lang": "JSON",
+                    "nFiles": 36,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 729
+                },
+                {
+                    "lang": "YAML",
+                    "nFiles": 12,
+                    "blank": 39,
+                    "comment": 15,
+                    "code": 495
+                },
+                {
+                    "lang": "Markdown",
+                    "nFiles": 15,
+                    "blank": 60,
+                    "comment": 0,
+                    "code": 438
+                },
+                {
+                    "lang": "HTML",
+                    "nFiles": 3,
+                    "blank": 180,
+                    "comment": 0,
+                    "code": 420
+                },
+                {
+                    "lang": "Bourne Again Shell",
+                    "nFiles": 3,
+                    "blank": 57,
+                    "comment": 60,
+                    "code": 363
+                },
+                {
+                    "lang": "Gradle",
+                    "nFiles": 12,
+                    "blank": 60,
+                    "comment": 6,
+                    "code": 360
+                },
+                {
+                    "lang": "DOS Batch",
+                    "nFiles": 3,
+                    "blank": 72,
+                    "comment": 6,
+                    "code": 192
+                },
+                {
+                    "lang": "make",
+                    "nFiles": 3,
+                    "blank": 57,
+                    "comment": 24,
+                    "code": 177
+                },
+                {
+                    "lang": "Java",
+                    "nFiles": 3,
+                    "blank": 9,
+                    "comment": 15,
+                    "code": 123
+                },
+                {
+                    "lang": "Kotlin",
+                    "nFiles": 6,
+                    "blank": 9,
+                    "comment": 0,
+                    "code": 39
+                },
+                {
+                    "lang": "C/C++ Header",
+                    "nFiles": 3,
+                    "blank": 0,
+                    "comment": 0,
+                    "code": 3
+                }
+            ]
+        }
+    ]
+}
