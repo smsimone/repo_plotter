@@ -55,7 +55,7 @@ def get_commits(folder: str) -> typing.List[str]:
     for index in progressbar.progressbar(range(len(lines))):
         line = lines[index]
         commit = Commit(line.decode('utf-8').strip())
-        commit.checkout_and_get_data(folder)
+        commit.checkout_and_get_data()
         commits.append(commit)
     return commits
 

@@ -6,7 +6,7 @@ import typing
 
 from plotter.model.src.aggregated import AggregatedData
 from plotter.model.src.filedata import FileData
-from plotter.utilities import get_cloc_data
+from plotter.utilities import get_cloc_data_from_commit
 
 
 class Commit(object):
@@ -20,12 +20,22 @@ class Commit(object):
     def __init__(self, data: str):
         commit, date = data.replace('"', '').split(" ")
         self.commitHash = commit
+        self.squashed_hashes = []
         year, month, day = date.split("-")
         self.date = datetime.datetime(
             year=int(year), month=int(month), day=int(day))
 
+    def add_squashed_hash(self, hash: str):
+        self.squashed_hashes.append(hash)
+
     def __set_commit_hash__(self, hash: str):
         self.commitHash = hash
+
+    def get_languages(self) -> typing.List[str]:
+        """
+            Returns all the languages contained in this commit
+        """
+        return [item.lang for item in self.langData]
 
     def __set_date__(self, date: datetime):
         self.date = date
@@ -55,48 +65,36 @@ class Commit(object):
         other_languages = [data.lang for data in other_commit.langData]
 
         common_languages = set(self_languages).intersection(other_languages)
-        missing_languages = set(other_languages).difference(self_languages)
+        missing_from_other_languages = set(
+            other_languages).difference(self_languages)
+        missing_from_self_languages = set(
+            self_languages).difference(other_languages)
+
         new_lang_data = []
         for data in self.langData:
+            # sums the languages fields that are in common between two commits
             if data.lang in common_languages:
                 new_lang_data.append(data.add_other_data(
                     other_commit.__get_data_for_lang__(data.lang), inPlace=False))
-        for data in other_commit.langData:
-            if data.lang in missing_languages:
+            elif data.lang in missing_from_self_languages:
                 new_lang_data.append(data)
+
+        # adds the commits that are missing in the initial commit
+        for data in other_commit.langData:
+            if data.lang in missing_from_other_languages:
+                new_lang_data.append(data)
+
         self.langData = new_lang_data
+        self.aggregated.add(other_commit.aggregated)
 
-    def compare_to(self, other):
-        """
-            Compares `self` and `other` (if it's a `Commit`)
-
-            returns:
-                - -1 if `other` was done before
-                - 0 if `self` and `other` have the same date
-                - 1 if `self` was done before
-        """
-        if not isinstance(other, Commit):
-            raise Exception(
-                "Cannot compare to an object that isn't a `Commit`")
-
-        if self.date == other.date:
-            return 0
-        elif self.date < other.date:
-            return 1
-        else:
-            return -1
-
-    def checkout_and_get_data(self, directory: str):
+    def checkout_and_get_data(self):
         """
             Moves into `directory` (which is the same of `--dir` flag), checkouts to `self.commit` and gets the data calculated by cloc
 
             Sets `self.langData` and `self.aggregated` to the values calculated
         """
-        os.chdir(directory)
-        subprocess.Popen(['git', 'checkout', '--quiet', self.commitHash],
-                         stdout=subprocess.DEVNULL)
-        self.langData, self.aggregated = get_cloc_data('.')
-        os.chdir("..")
+        self.langData, self.aggregated = get_cloc_data_from_commit(
+            self.commitHash)
 
     def to_string(self):
         return f"Commit {self.commitHash} done on {self.date}"
@@ -109,6 +107,7 @@ class Commit(object):
             'hash': self.commitHash,
             'date': f"{self.date.year}-{self.date.month}-{self.date.day}",
             'aggregated': self.aggregated.as_map(),
+            'squashed_hashes': self.squashed_hashes,
             'fileData': [item.as_map() for item in self.langData]
         }
 

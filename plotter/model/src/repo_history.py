@@ -1,7 +1,10 @@
 import datetime
 import json
 import os
+from plotter.utilities import flatten_list
 import typing
+
+import numpy as np
 
 from .commit import Commit, parse_commit
 
@@ -15,6 +18,7 @@ class RepoHistory(object):
         self.commits = commits
         self.initialDate = None
         self.finalDate = None
+        self.languages = []
 
     def __set_initial_date__(self, date: datetime):
         self.initialDate = date
@@ -29,11 +33,19 @@ class RepoHistory(object):
         self.commits = commits
 
     def as_map(self):
-        return {
-            'initialDate':  f"{self.initialDate.year}-{self.initialDate.month}-{self.initialDate.day}",
-            'finalDate': f"{self.finalDate.year}-{self.finalDate.month}-{self.finalDate.day}",
-            'commits': [commit.as_map() for commit in self.commits],
-        }
+        if self.initialDate != None and self.finalDate != None:
+            return {
+                'initialDate':  f"{self.initialDate.year}-{self.initialDate.month}-{self.initialDate.day}",
+                'finalDate': f"{self.finalDate.year}-{self.finalDate.month}-{self.finalDate.day}",
+                'languages': self.languages,
+                'commits': [commit.as_map() for commit in self.commits],
+            }
+        else:
+            return {
+                'initialDate': self.initialDate,
+                'finalDate': self.finalDate,
+                'commits': [commit.as_map() for commit in self.commits],
+            }
 
     def preprocess_commits(self):
         """
@@ -59,11 +71,15 @@ class RepoHistory(object):
                         break
                     else:
                         commit.add_commit_data(commits[j])
+                        commit.add_squashed_hash(commits[j].commitHash)
                         same_commits.append(j)
                 new_commits.append(commit)
         print(
             f"Reduced from {starting_commits} to {len(new_commits)} total commits.\nThe plot will start in {self.initialDate} and will end on {self.finalDate}")
         self.commits = new_commits
+        self.languages = flatten_list(
+            [commit.get_languages() for commit in commits], asSet=True)
+        print(f"Languages: {self.languages}")
 
 
 def parse_repo_history(input_file: str) -> RepoHistory:
