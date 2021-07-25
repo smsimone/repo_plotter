@@ -1,10 +1,13 @@
 import datetime
 import json
 import os
-from plotter.utilities import flatten_list
 import typing
 
 import numpy as np
+from plotter.model.src import filedata
+from plotter.model.src.aggregated import AggregatedData
+from plotter.model.src.filedata import FileData
+from plotter.utilities import flatten_list
 
 from .commit import Commit, parse_commit
 
@@ -18,7 +21,11 @@ class RepoHistory(object):
         self.commits = commits
         self.initialDate = None
         self.finalDate = None
+        self.preprocessed = False
         self.languages = []
+
+    def __set_preprocessed__(self, preprocessed: bool):
+        self.preprocessed = preprocessed
 
     def __set_initial_date__(self, date: datetime):
         self.initialDate = date
@@ -38,14 +45,37 @@ class RepoHistory(object):
                 'initialDate':  f"{self.initialDate.year}-{self.initialDate.month}-{self.initialDate.day}",
                 'finalDate': f"{self.finalDate.year}-{self.finalDate.month}-{self.finalDate.day}",
                 'languages': self.languages,
+                'preprocessed': self.preprocessed,
                 'commits': [commit.as_map() for commit in self.commits],
             }
         else:
             return {
                 'initialDate': self.initialDate,
                 'finalDate': self.finalDate,
+                'preprocessed': self.preprocessed,
                 'commits': [commit.as_map() for commit in self.commits],
             }
+
+    def get_commit_dates(self) -> typing.List[datetime.datetime]:
+        """
+        Returns all the dates of the preprocessed commits
+        """
+        return [item.date for item in self.commits]
+
+    def get_commit_data(self, languages=[], field='code') -> typing.List[typing.List[FileData]]:
+        """
+        returns a list of list of FileData
+
+        First level has the same dimension of parameter `languages` and each index refers the the
+        language in the same index in `languages`
+        """
+        to_return = [[] for _ in languages]
+        for commit in self.commits:
+            for data in commit.langData:
+                if data.lang in languages:
+                    index = languages.index(data.lang)
+                    to_return[index].append(data.get_field(field))
+        return to_return
 
     def preprocess_commits(self):
         """
@@ -80,6 +110,7 @@ class RepoHistory(object):
         self.languages = flatten_list(
             [commit.get_languages() for commit in commits], asSet=True)
         print(f"Languages: {self.languages}")
+        self.preprocessed = True
 
 
 def parse_repo_history(input_file: str) -> RepoHistory:
@@ -94,6 +125,7 @@ def parse_repo_history(input_file: str) -> RepoHistory:
     repo_history = RepoHistory()
     repo_history.__set_initial_date__(data['initialDate'])
     repo_history.__set_final_date__(data['finalDate'])
+    repo_history.__set_preprocessed__(data['preprocessed'])
 
     commits = data['commits']
     parsed_commits = [parse_commit(item) for item in commits]

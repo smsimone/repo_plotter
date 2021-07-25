@@ -20,6 +20,16 @@ class FileData(object):
         self.comment = data['comment']
         self.code = data['code']
 
+    def get_field(self, field: str) -> int:
+        if field == 'code':
+            return self.code
+        elif field == "nFiles":
+            return self.numFiles
+        elif field == 'blank':
+            return self.blank
+        elif field == 'comment':
+            return self.comment
+
     def to_string(self):
         return f"Language {self.lang} has {self.code} lines of code"
 

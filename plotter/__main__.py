@@ -8,6 +8,7 @@ import progressbar
 from absl import app, flags
 
 from plotter.model.src.repo_history import RepoHistory, parse_repo_history
+from plotter.plot import Plotter
 
 from .model.src.commit import Commit
 from .utilities import get_cloc_data
@@ -48,8 +49,7 @@ def get_commits(folder: str) -> typing.List[str]:
     command = r'git.--no-pager.log.--pretty=format:"%H %ad".--date=format:"%F"'
     p = subprocess.Popen(command.split("."),
                          stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    os.chdir("..")
-
+    
     lines = p.stdout.readlines()
     commits = []
     for index in progressbar.progressbar(range(len(lines))):
@@ -57,6 +57,8 @@ def get_commits(folder: str) -> typing.List[str]:
         commit = Commit(line.decode('utf-8').strip())
         commit.checkout_and_get_data()
         commits.append(commit)
+
+    os.chdir("..")
     return commits
 
 
@@ -75,7 +77,9 @@ def generate_repo_history(temporary_dir: str) -> RepoHistory:
 
         os.mkdir(temporary_dir)
         try:
-            subprocess.call(['git', 'clone', repository, temporary_dir])
+            print("Cloning repository...")
+            subprocess.call(['git', 'clone', repository,
+                            temporary_dir, '--quiet'])
         except:
             print("Failed to clone repository")
             exit(-2)
@@ -96,6 +100,7 @@ def generate_repo_history(temporary_dir: str) -> RepoHistory:
             print(f"Changed branch to {FLAGS.branch}")
         os.chdir('..')
 
+    print("Getting commit data")
     commits = get_commits(temporary_dir)
     return RepoHistory(commits)
 
@@ -122,20 +127,20 @@ def main(args):
             with open(f'{output_folder}/repo_history.json', 'w+') as f:
                 json.dump(repo_history.as_map(), f)
 
+    print("Preprocessing repository's history")
     repo_history.preprocess_commits()
     if write_output:
         with open(f'{output_folder}/repo_history_preprocessed.json', 'w+') as f:
             json.dump(repo_history.as_map(), f)
-    exit(-1)
 
-    languages, _ = get_cloc_data(temporary_dir)
+    languages = repo_history.languages
 
     print(f"There are {len(languages)} possible languages to pick:")
     count = 0
     langs = {}
     for lang in languages:
-        print(f"- {count}: {lang.lang.lower()}")
-        langs[count] = lang.lang
+        print(f"- {count}: {lang}")
+        langs[count] = lang
         count += 1
     langs[count] = 'All'
     print(f"- {count}: the sum of all them")
@@ -156,6 +161,10 @@ def main(args):
             retry = True
 
     print(f"Should plot {[langs[index] for index in  languages_to_plot]}")
+
+    plotter = Plotter(repo_history)
+    plotter.plot([langs[index] for index in  languages_to_plot])
+    
 
 
 if __name__ == '__main__':
