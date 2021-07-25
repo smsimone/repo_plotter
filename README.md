@@ -1,4 +1,5 @@
 # Repo Plotter
+[![wakatime](https://wakatime.com/badge/github/smsimone/repo_plotter.svg)](https://wakatime.com/badge/github/smsimone/repo_plotter)
 
 Useless script that plots repository stats over time.
 
