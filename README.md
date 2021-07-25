@@ -1,4 +1,5 @@
 # Repo Plotter
+
 [![wakatime](https://wakatime.com/badge/github/smsimone/repo_plotter.svg)](https://wakatime.com/badge/github/smsimone/repo_plotter)
 
 Useless script that plots repository stats over time.
@@ -29,6 +30,10 @@ After that you can run the script
 ```zsh
 $ python3 -m plotter --repository "repository_url"
 ```
+
+and it will generate an image like this:
+
+![plot](./.readme/repo_plotter.png)
 
 ## Flags
 
