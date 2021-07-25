@@ -46,7 +46,7 @@ def get_commits(folder: str) -> typing.List[str]:
         At each commit it runs the `cloc` utility to retrieve all data
     """
     os.chdir(folder)
-    command = r'git.--no-pager.log.--pretty=format:"%H %ad".--date=format:"%F"'
+    command = r'git.--no-pager.log.--pretty=format:"%H %ad".--date=format:"%F %H:%m:%S"'
     p = subprocess.Popen(command.split("."),
                          stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 

@@ -90,20 +90,21 @@ class RepoHistory(object):
         commits.sort(key=lambda x: x.date)
         self.initialDate = commits[0].date
         self.finalDate = commits[-1].date
+
         new_commits = []
 
-        last_commit = None
-        for i in range(len(commits)):
-            commit: Commit = commits[i]
-            last_commit = commit
-            for j in range(i, len(commits)):
-                if commits[j].date != commit.date:
-                    new_commits.append(last_commit)
-                    last_commit = None
-                    break
-                else:
-                    last_commit = commits[j]
-                    
+        grouped_commits = {}
+        for commit in commits:
+            date = commit.date.date()
+            if date not in grouped_commits:
+                grouped_commits[date] = []
+            grouped_commits[date].append(commit)
+
+        for date in grouped_commits:
+            temp_commits = grouped_commits[date]
+            temp_commits.sort(key=lambda x: x.date.date())
+            new_commits.append(temp_commits[-1])
+
         print(
             f"Reduced from {starting_commits} to {len(new_commits)} total commits.\nThe plot will start in {self.initialDate} and will end on {self.finalDate}")
         self.commits = new_commits

@@ -24,7 +24,10 @@ class Plotter(object):
 
         for y_value_index in range(len(y_values)):
             values = y_values[y_value_index]
-            value_to_repeat = values[-1]
+            if len(values) == 0:
+                value_to_repeat = 0
+            else:
+                value_to_repeat = values[-1]
             while len(values) != len(x_values):
                 values.append(value_to_repeat)
 

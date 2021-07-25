@@ -18,12 +18,13 @@ class Commit(object):
     """
 
     def __init__(self, data: str):
-        commit, date = data.replace('"', '').split(" ")
+        commit, date, time = data.replace('"', '').split(" ")
         self.commitHash = commit
         self.squashed_hashes = []
         year, month, day = date.split("-")
+        hour, minute, second = time.strip().split(":")
         self.date = datetime.datetime(
-            year=int(year), month=int(month), day=int(day))
+            year=int(year), month=int(month), day=int(day), hour=int(hour), minute=int(minute), second=int(second))
 
     def add_squashed_hash(self, hash: str):
         self.squashed_hashes.append(hash)
