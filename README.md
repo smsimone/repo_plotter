@@ -52,3 +52,9 @@ and it will generate an image like this:
 - `--input_file <file_path>`
   - optional, if defined it will override `--repository` and `--offline` flags
   - Specifies a custom json file to feed the script. It must has been generated during an old execution
+- `--write_output`
+  - optional
+  - Specifies wether the script has to write the intermediate results to output
+- `--output_folder`
+  - required if `--write_output` is defined
+  - Specifies the folder where the script has to write the output files
