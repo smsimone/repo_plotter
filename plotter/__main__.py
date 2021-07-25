@@ -49,7 +49,7 @@ def get_commits(folder: str) -> typing.List[str]:
     command = r'git.--no-pager.log.--pretty=format:"%H %ad".--date=format:"%F"'
     p = subprocess.Popen(command.split("."),
                          stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    
+
     lines = p.stdout.readlines()
     commits = []
     for index in progressbar.progressbar(range(len(lines))):
@@ -105,6 +105,45 @@ def generate_repo_history(temporary_dir: str) -> RepoHistory:
     return RepoHistory(commits)
 
 
+def plot_data(repo_history: RepoHistory):
+    continue_plotting = True
+    while continue_plotting:
+        languages = repo_history.languages
+
+        print(f"There are {len(languages)} possible languages to pick:")
+        count = 0
+        langs = {}
+        for lang in languages:
+            print(f"- {count}: {lang}")
+            langs[count] = lang
+            count += 1
+        langs[count] = 'All'
+        print(f"- {count}: the sum of all them")
+
+        retry = True
+        while retry:
+            retry = False
+            try:
+                languages_to_plot = [int(index) for index in input(
+                    "Which one you want to pick?\n(you can select how many languages you want, just comma-separated '1,2,3')\n").split(",")]
+                for item in languages_to_plot:
+                    if int(item) > count:
+                        print(f"item {item} is not valid")
+                        retry = True
+            except:
+                print(
+                    f"The selection must be done with the indexes between 0 and {count}")
+                retry = True
+
+        print(f"Should plot {[langs[index] for index in  languages_to_plot]}")
+
+        plotter = Plotter(repo_history)
+        plotter.plot([langs[index] for index in languages_to_plot])
+        should_plot = input("Plot again? Y/n: ")
+        if should_plot.strip() == 'n':
+            exit(1)
+
+
 def main(args):
     temporary_dir = FLAGS.dir
     write_output = FLAGS.write_output
@@ -133,38 +172,7 @@ def main(args):
         with open(f'{output_folder}/repo_history_preprocessed.json', 'w+') as f:
             json.dump(repo_history.as_map(), f)
 
-    languages = repo_history.languages
-
-    print(f"There are {len(languages)} possible languages to pick:")
-    count = 0
-    langs = {}
-    for lang in languages:
-        print(f"- {count}: {lang}")
-        langs[count] = lang
-        count += 1
-    langs[count] = 'All'
-    print(f"- {count}: the sum of all them")
-
-    retry = True
-    while retry:
-        retry = False
-        try:
-            languages_to_plot = [int(index) for index in input(
-                "Which one you want to pick?\n(you can select how many languages you want, just comma-separated '1,2,3')\n").split(",")]
-            for item in languages_to_plot:
-                if int(item) > count:
-                    print(f"item {item} is not valid")
-                    retry = True
-        except:
-            print(
-                f"The selection must be done with the indexes between 0 and {count}")
-            retry = True
-
-    print(f"Should plot {[langs[index] for index in  languages_to_plot]}")
-
-    plotter = Plotter(repo_history)
-    plotter.plot([langs[index] for index in  languages_to_plot])
-    
+    plot_data(repo_history)
 
 
 if __name__ == '__main__':

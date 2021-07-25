@@ -21,10 +21,16 @@ class Plotter(object):
         x_values = [
             f"{date.day}/{date.month}/{date.year}" for date in self.repo_history.get_commit_dates()]
         y_values = self.repo_history.get_commit_data(languages)
+
         for y_value_index in range(len(y_values)):
-            plt.plot(x_values, y_values[y_value_index],
+            values = y_values[y_value_index]
+            value_to_repeat = values[-1]
+            while len(values) != len(x_values):
+                values.append(value_to_repeat)
+
+            plt.plot(x_values, values, linestyle='dashed', marker='s',
                      label=languages[y_value_index])
+
         plt.legend()
-        plt.xlabel("Date")
-        plt.ylabel("Lines of code")
+
         plt.show()
