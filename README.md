@@ -58,3 +58,5 @@ and it will generate an image like this:
 - `--output_folder`
   - required if `--write_output` is defined
   - Specifies the folder where the script has to write the output files
+- `--no_preprocessing`
+  - Doesn't preprocess data. The script will plot all the commits

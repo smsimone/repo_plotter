@@ -107,6 +107,7 @@ class Commit(object):
         return {
             'hash': self.commitHash,
             'date': f"{self.date.year}-{self.date.month}-{self.date.day}",
+            'time': f"{self.date.hour}:{self.date.minute}:{self.date.second}",
             'aggregated': self.aggregated.as_map(),
             'squashed_hashes': self.squashed_hashes,
             'fileData': [item.as_map() for item in self.langData]
@@ -114,7 +115,7 @@ class Commit(object):
 
 
 def parse_commit(data: map) -> Commit:
-    commit = Commit(f"{data['hash']} {data['date']}")
+    commit = Commit(f"{data['hash']} {data['date']} {data['time']}")
     commit.__set_aggregated_data__(AggregatedData(data['aggregated']))
     fileData = [FileData(item) for item in data['fileData']]
     commit.__set_file_data__(fileData)

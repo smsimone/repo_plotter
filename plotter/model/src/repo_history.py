@@ -58,9 +58,16 @@ class RepoHistory(object):
 
     def get_commit_dates(self) -> typing.List[datetime.datetime]:
         """
-        Returns all the dates of the preprocessed commits
+            if `self.preprocessed` is `True`
+                Returns all the dates of the preprocessed commits
+            else:
+                Returns a list of integers
         """
-        return [item.date for item in self.commits]
+        print("Getting preprocessed data:", self.preprocessed)
+        if self.preprocessed:
+            return [item.date for item in self.commits]
+        else:
+            return list(range(len(self.commits)))
 
     def get_commit_data(self, languages=[], field='code') -> typing.List[typing.List[FileData]]:
         """
@@ -77,41 +84,43 @@ class RepoHistory(object):
                     to_return[index].append(data.get_field(field))
         return to_return
 
-    def preprocess_commits(self):
+    def preprocess_commits(self, not_preprocessing: bool):
         """
             Prepares the repo history to be plotted
 
-            It will:
+            If not_preprocessing is `False` it will:
                 - squash the commits done on same days on a single fake commit that sums all the stats
-                - calculates the initial and final dates
+
+            In very case it will:
+                - calculate the initial and final dates
+                - get all languages used in the commits
         """
         commits = self.commits
         starting_commits = len(self.commits)
         commits.sort(key=lambda x: x.date)
         self.initialDate = commits[0].date
         self.finalDate = commits[-1].date
+        if not not_preprocessing:
+            new_commits = []
 
-        new_commits = []
+            grouped_commits = {}
+            for commit in commits:
+                date = commit.date.date()
+                if date not in grouped_commits:
+                    grouped_commits[date] = []
+                grouped_commits[date].append(commit)
 
-        grouped_commits = {}
-        for commit in commits:
-            date = commit.date.date()
-            if date not in grouped_commits:
-                grouped_commits[date] = []
-            grouped_commits[date].append(commit)
+            for date in grouped_commits:
+                temp_commits = grouped_commits[date]
+                temp_commits.sort(key=lambda x: x.date.date())
+                new_commits.append(temp_commits[-1])
 
-        for date in grouped_commits:
-            temp_commits = grouped_commits[date]
-            temp_commits.sort(key=lambda x: x.date.date())
-            new_commits.append(temp_commits[-1])
-
-        print(
-            f"Reduced from {starting_commits} to {len(new_commits)} total commits.\nThe plot will start in {self.initialDate} and will end on {self.finalDate}")
-        self.commits = new_commits
+            print(
+                f"Reduced from {starting_commits} to {len(new_commits)} total commits.\nThe plot will start in {self.initialDate} and will end on {self.finalDate}")
+            self.commits = new_commits
+            self.preprocessed = True
         self.languages = flatten_list(
             [commit.get_languages() for commit in commits], asSet=True)
-        print(f"Languages: {self.languages}")
-        self.preprocessed = True
 
 
 def parse_repo_history(input_file: str) -> RepoHistory:

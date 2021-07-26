@@ -21,6 +21,8 @@ flags.DEFINE_string(
     'input_file', None, "Specifies a custom json file to feed the script. It must has been generated during an old execution")
 flags.DEFINE_string(
     'branch', None, 'Select a custom branch of the repository')
+flags.DEFINE_bool('no_preprocessing', False,
+                  'Doesn\'t preprocess data. The script will plot all the commits')
 flags.DEFINE_bool('offline', False,
                   'Specify if it should use the current repository in the folder defined with `--dir` of it has to clone a new repository')
 flags.DEFINE_bool('write_output', False,
@@ -33,7 +35,7 @@ flags.DEFINE_string(
 
 def command_exists(command_name: str) -> bool:
     """
-    Checks if `command_name` is a command present in this env
+        Checks if `command_name` is a command present in this env
     """
     from shutil import which
     return which(command_name) is not None
@@ -166,8 +168,9 @@ def main(args):
             with open(f'{output_folder}/repo_history.json', 'w+') as f:
                 json.dump(repo_history.as_map(), f)
 
+    
     print("Preprocessing repository's history")
-    repo_history.preprocess_commits()
+    repo_history.preprocess_commits(FLAGS.no_preprocessing)
     if write_output:
         with open(f'{output_folder}/repo_history_preprocessed.json', 'w+') as f:
             json.dump(repo_history.as_map(), f)
