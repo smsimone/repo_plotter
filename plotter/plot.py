@@ -19,7 +19,26 @@ class Plotter(object):
         """
         x_values = [
             f"{date.day}/{date.month}/{date.year}" if isinstance(date, datetime) else date for date in self.repo_history.get_commit_dates()]
-        y_values = self.repo_history.get_commit_data(languages)
+
+        print("Which field you want to plot?")
+        available_fields = [(0, 'code', 'Lines of code'), (1, 'nFiles', 'Number of files'),
+                            (2, 'blank', 'Blank lines'), (3, 'comment', 'Comment lines')]
+        ok = False
+        while not ok:
+            ok = True
+            for item in available_fields:
+                print(f"{item[0]}: {item[2]}")
+
+            field = input("Pick one field to plot: ")
+            avals = [aval[0] for aval in available_fields]
+            if int(field) not in avals:
+                ok = False
+                print(f"Field {field} is not available")
+
+        field, for_label = available_fields[int(
+            field)][1], available_fields[int(field)][2]
+
+        y_values = self.repo_history.get_commit_data(languages, field=field)
 
         for y_value_index in range(len(y_values)):
             values = y_values[y_value_index]
@@ -39,6 +58,6 @@ class Plotter(object):
         else:
             plt.xlabel("Commit number")
 
-        plt.ylabel("Lines of code")
+        plt.ylabel(for_label)
 
         plt.show()
