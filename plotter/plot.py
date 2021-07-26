@@ -19,7 +19,6 @@ class Plotter(object):
         """
         x_values = [
             f"{date.day}/{date.month}/{date.year}" if isinstance(date, datetime) else date for date in self.repo_history.get_commit_dates()]
-        print(len(x_values), x_values)
         y_values = self.repo_history.get_commit_data(languages)
 
         for y_value_index in range(len(y_values)):
@@ -35,5 +34,11 @@ class Plotter(object):
                      label=languages[y_value_index])
 
         plt.legend()
+        if isinstance(x_values[0], datetime):
+            plt.xlabel("Commit dates")
+        else:
+            plt.xlabel("Commit number")
+
+        plt.ylabel("Lines of code")
 
         plt.show()
