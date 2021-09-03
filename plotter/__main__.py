@@ -168,7 +168,6 @@ def main(args):
             with open(f'{output_folder}/repo_history.json', 'w+') as f:
                 json.dump(repo_history.as_map(), f)
 
-    
     print("Preprocessing repository's history")
     repo_history.preprocess_commits(FLAGS.no_preprocessing)
     if write_output:
