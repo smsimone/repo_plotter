@@ -4,6 +4,7 @@ import os
 import typing
 
 import numpy as np
+
 from plotter.model.src import filedata
 from plotter.model.src.aggregated import AggregatedData
 from plotter.model.src.filedata import FileData
@@ -14,10 +15,10 @@ from .commit import Commit, parse_commit
 
 class RepoHistory(object):
     """
-        Contains all the history of the repository
+    Contains all the history of the repository
     """
 
-    def __init__(self,  commits=[]):
+    def __init__(self, commits=[]):
         self.commits = commits
         self.initialDate = None
         self.finalDate = None
@@ -42,26 +43,28 @@ class RepoHistory(object):
     def as_map(self):
         if self.initialDate != None and self.finalDate != None:
             return {
-                'initialDate':  f"{self.initialDate.year}-{self.initialDate.month}-{self.initialDate.day}",
-                'finalDate': f"{self.finalDate.year}-{self.finalDate.month}-{self.finalDate.day}",
-                'languages': self.languages,
-                'preprocessed': self.preprocessed,
-                'commits': [commit.as_map() for commit in self.commits],
+                "initialDate":
+                f"{self.initialDate.year}-{self.initialDate.month}-{self.initialDate.day}",
+                "finalDate":
+                f"{self.finalDate.year}-{self.finalDate.month}-{self.finalDate.day}",
+                "languages": self.languages,
+                "preprocessed": self.preprocessed,
+                "commits": [commit.as_map() for commit in self.commits],
             }
         else:
             return {
-                'initialDate': self.initialDate,
-                'finalDate': self.finalDate,
-                'preprocessed': self.preprocessed,
-                'commits': [commit.as_map() for commit in self.commits],
+                "initialDate": self.initialDate,
+                "finalDate": self.finalDate,
+                "preprocessed": self.preprocessed,
+                "commits": [commit.as_map() for commit in self.commits],
             }
 
     def get_commit_dates(self) -> typing.List[datetime.datetime]:
         """
-            if `self.preprocessed` is `True`
-                Returns all the dates of the preprocessed commits
-            else:
-                Returns a list of integers
+        if `self.preprocessed` is `True`
+            Returns all the dates of the preprocessed commits
+        else:
+            Returns a list of integers
         """
         print("Getting preprocessed data:", self.preprocessed)
         if self.preprocessed:
@@ -69,7 +72,9 @@ class RepoHistory(object):
         else:
             return list(range(len(self.commits)))
 
-    def get_commit_data(self, languages=[], field='code') -> typing.List[typing.List[FileData]]:
+    def get_commit_data(self,
+                        languages=[],
+                        field="code") -> typing.List[typing.List[FileData]]:
         """
         returns a list of list of FileData
 
@@ -86,14 +91,14 @@ class RepoHistory(object):
 
     def preprocess_commits(self, not_preprocessing: bool):
         """
-            Prepares the repo history to be plotted
+        Prepares the repo history to be plotted
 
-            If not_preprocessing is `False` it will:
-                - squash the commits done on same days on a single fake commit that sums all the stats
+        If not_preprocessing is `False` it will:
+            - squash the commits done on same days on a single fake commit that sums all the stats
 
-            In very case it will:
-                - calculate the initial and final dates
-                - get all languages used in the commits
+        In very case it will:
+            - calculate the initial and final dates
+            - get all languages used in the commits
         """
         commits = self.commits
         starting_commits = len(self.commits)
@@ -116,7 +121,8 @@ class RepoHistory(object):
                 new_commits.append(temp_commits[-1])
 
             print(
-                f"Reduced from {starting_commits} to {len(new_commits)} total commits.\nThe plot will start in {self.initialDate} and will end on {self.finalDate}")
+                f"Reduced from {starting_commits} to {len(new_commits)} total commits.\nThe plot will start in {self.initialDate} and will end on {self.finalDate}"
+            )
             self.commits = new_commits
             self.preprocessed = True
         self.languages = flatten_list(
@@ -129,15 +135,15 @@ def parse_repo_history(input_file: str) -> RepoHistory:
         print(f"File {input_file} doesn't exists")
         exit(-1)
 
-    with open(input_file, 'r') as f:
+    with open(input_file, "r") as f:
         data = json.loads(f.read())
 
     repo_history = RepoHistory()
-    repo_history.__set_initial_date__(data['initialDate'])
-    repo_history.__set_final_date__(data['finalDate'])
-    repo_history.__set_preprocessed__(data['preprocessed'])
+    repo_history.__set_initial_date__(data["initialDate"])
+    repo_history.__set_final_date__(data["finalDate"])
+    repo_history.__set_preprocessed__(data["preprocessed"])
 
-    commits = data['commits']
+    commits = data["commits"]
     parsed_commits = [parse_commit(item) for item in commits]
     repo_history.__set_commits__(parsed_commits)
 
