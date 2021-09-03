@@ -18,7 +18,9 @@ class RepoHistory(object):
     Contains all the history of the repository
     """
 
-    def __init__(self, commits=[]):
+    def __init__(self, commits=None):
+        if commits is None:
+            commits = []
         self.commits = commits
         self.initialDate = None
         self.finalDate = None
@@ -73,7 +75,7 @@ class RepoHistory(object):
             return list(range(len(self.commits)))
 
     def get_commit_data(self,
-                        languages=[],
+                        languages=None,
                         field="code") -> typing.List[typing.List[FileData]]:
         """
         returns a list of list of FileData
@@ -81,6 +83,8 @@ class RepoHistory(object):
         First level has the same dimension of parameter `languages` and each index refers the the
         language in the same index in `languages`
         """
+        if languages is None:
+            languages = []
         to_return = [[] for _ in languages]
         for commit in self.commits:
             for data in commit.langData:
