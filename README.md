@@ -1,6 +1,7 @@
 # Repo Plotter
 
 [![wakatime](https://wakatime.com/badge/github/smsimone/repo_plotter.svg)](https://wakatime.com/badge/github/smsimone/repo_plotter)
+[![DeepSource](https://deepsource.io/gh/smsimone/repo_plotter.svg/?label=active+issues&show_trend=true&token=ofGZM1w81RC25i2-BXlyfkTq)](https://deepsource.io/gh/smsimone/repo_plotter/?ref=repository-badge)
 
 Useless script that plots repository stats over time.
 
