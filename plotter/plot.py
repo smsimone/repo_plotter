@@ -1,4 +1,5 @@
 from datetime import datetime
+
 import matplotlib.pyplot as plt
 
 from .model.src.repo_history import RepoHistory
@@ -13,16 +14,23 @@ class Plotter(object):
 
     def plot(self, languages=[]):
         """
-            Plots the `RepoHistory` object
+        Plots the `RepoHistory` object
 
-            if `languages` is empty, it will plot the aggregated data
+        if `languages` is empty, it will plot the aggregated data
         """
         x_values = [
-            f"{date.day}/{date.month}/{date.year}" if isinstance(date, datetime) else date for date in self.repo_history.get_commit_dates()]
+            f"{date.day}/{date.month}/{date.year}" if isinstance(
+                date, datetime) else date
+            for date in self.repo_history.get_commit_dates()
+        ]
 
         print("Which field you want to plot?")
-        available_fields = [(0, 'code', 'Lines of code'), (1, 'nFiles', 'Number of files'),
-                            (2, 'blank', 'Blank lines'), (3, 'comment', 'Comment lines')]
+        available_fields = [
+            (0, "code", "Lines of code"),
+            (1, "nFiles", "Number of files"),
+            (2, "blank", "Blank lines"),
+            (3, "comment", "Comment lines"),
+        ]
         ok = False
         while not ok:
             ok = True
@@ -35,8 +43,10 @@ class Plotter(object):
                 ok = False
                 print(f"Field {field} is not available")
 
-        field, for_label = available_fields[int(
-            field)][1], available_fields[int(field)][2]
+        field, for_label = (
+            available_fields[int(field)][1],
+            available_fields[int(field)][2],
+        )
 
         y_values = self.repo_history.get_commit_data(languages, field=field)
 
@@ -49,8 +59,13 @@ class Plotter(object):
             while len(values) != len(x_values):
                 values.append(value_to_repeat)
 
-            plt.plot(x_values, values, linestyle='dashed', marker='s',
-                     label=languages[y_value_index])
+            plt.plot(
+                x_values,
+                values,
+                linestyle="dashed",
+                marker="s",
+                label=languages[y_value_index],
+            )
 
         plt.legend()
         if isinstance(x_values[0], datetime):
